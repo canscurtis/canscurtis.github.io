@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="NDHU CSIE" />
+    <title>NDHUCSIE Classroom Seating Trace System</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css"
+      integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"
+      integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+      integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="favicon.png" sizes="180x180" />
+    <link rel="icon" href="favicon.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="favicon.png" sizes="16x16" type="image/png" />
+    <link rel="icon" href="favicon.ico" />
+    <meta name="theme-color" content="#385861" />
+
+    <style>
+      html,
+      body {
+        height: 100%;
+        background-image: url("bg.jpg");
+        background-color: rgb(0, 0, 0, 0.7);
+        background-size: cover;
+        background-repeat: no-repeat bottom center;
+        background-blend-mode: multiply;
+        background-attachment: fixed;
+        font-family: "JetBrains Mono", monospace;
+      }
+      .csieIconOuter {
+        margin-top: 5%;
+      }
+      .csieIcon {
+        width: 150px;
+        margin: 20px 0;
+        -webkit-filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.7));
+        filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.4));
+      }
+      .csieTitle {
+        color: #eddacc;
+        text-align: center;
+        font-size: 2.5em;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-shadow: 0 0 20px RGBA(255, 255, 255, 0.4);
+        margin-bottom: 50px;
+      }
+      .form-floating {
+        margin: 15px 0;
+      }
+      .form-check {
+        text-align: left;
+        color: white;
+      }
+      .formSection {
+        background-color: RGBA(56, 88, 97, 0.9);
+        box-shadow: 0 0 20px RGBA(0, 0, 0, 0.5);
+        border-radius: 10px;
+        padding: 20px 30px;
+        padding-bottom: 30px;
+      }
+      .form-floating.locked > input {
+        background-color: RGBA(0, 0, 0, 0.4);
+        border-radius: 8px;
+        border: 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        color: #fff;
+      }
+      .form-floating.locked > label {
+        color: #c8e6c9;
+      }
+      .form-floating.sid > input {
+        color: #0f9d58;
+        height: 3em;
+        font-size: 1.3em;
+        font-weight: 700;
+        border-radius: 8px;
+      }
+      .form-floating.sid > label {
+        color: #e84435;
+        font-weight: 700;
+        font-size: 1.3em;
+      }
+      .copyright {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        color: RGBA(255, 255, 255, 0.4);
+      }
+      @media (max-width: 767px) {
+        .formSection {
+          background-color: RGBA(56, 88, 97, 0.8);
+          border-radius: 10px 10px 0 0;
+          padding-bottom: 60px;
+        }
+        .copyright {
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          color: RGBA(255, 255, 255, 0.1);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="copyright">&copy; NDHU CSIE</div>
+
+    <div class="container" style="position: relative; top: 10%">
+      <form class="form-horizontal" method="post" action="checkin.php">
+        <div class="row">
+          <div class="col-12 col-md-5 text-center csieIconOuter">
+            <img class="csieIcon" src="CSIE_Icon_white.svg" />
+            <div class="csieTitle">
+              <span>NDHUCSIE</span> <span>Seating Trace</span> <span>System</span>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-7 text-center formSection">
+            <!-- Text input-->
+            <p style="text-align: right; color: rgba(255, 255, 255, 0.3); margin-bottom: 0">
+              *Input phone number if you are not student
+            </p>
+            <div class="form-floating sid" style="margin-top: 0">
+              <input
+                id="sid"
+                name="sid"
+                type="text"
+                class="form-control input-md"
+                placeholder="Input Here"
+                required=""
+              />
+              <label for="">👉INPUT STUDENT ID</label>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <!-- Text input-->
+                <div class="form-floating locked">
+                  <input
+                    id="bldg"
+                    name="bldg"
+                    type="text"
+                    value="SE2"
+                    class="form-control input-md"
+                    required=""
+                    readonly
+                  />
+                  <label for="bldg">BUILDING</label>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <!-- Text input-->
+                <div class="form-floating locked">
+                  <input
+                    id="room"
+                    name="room"
+                    type="text"
+                    value="D309"
+                    class="form-control input-md"
+                    required=""
+                    readonly
+                  />
+                  <label for="floatingInput">CLASSROOM</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-6">
+                <!-- Text input-->
+                <div class="form-floating locked">
+                  <input
+                    id="line"
+                    name="line"
+                    type="text"
+                    value="2"
+                    class="form-control input-md"
+                    required=""
+                    readonly
+                  />
+                  <label for="floatingInput">SEAT LINE</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <!-- Text input-->
+                <div class="form-floating locked">
+                  <input
+                    id="no"
+                    name="no"
+                    type="text"
+                    value="3"
+                    class="form-control input-md"
+                    required=""
+                    readonly
+                  />
+                  <label for="floatingInput">SEAT NUMBER</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-check" style="margin-top: 20px">
+              <input
+                id="call"
+                name="call"
+                style="width: 25px; height: 25px"
+                type="checkbox"
+                class="form-check-input form-control"
+                value="1"
+                onclick='swal("During A Roll Call !?", "僅於點名時點選，以免涉嫌混充點名！", "warning");'
+              />
+              <label class="form-check-label" style="font-size: 25px">&ensp;ROLL CALL</label>
+            </div>
+
+            <input
+              id="key"
+              name="key"
+              type="hidden"
+              value="2b0uZBi4GdQd@h81cdhGPZ013eArX6QROhxgNsFABTPzhq@R8C"
+            />
+
+            <!-- Button -->
+            <div class="form-group">
+              <label class="control-label" for="submit"> </label>
+              <button
+                id="submit"
+                name="submit"
+                class="btn btn-primary"
+                style="width: 100%; font-size: 30px; border-radius: 15px"
+              >
+                SEND
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
