@@ -20,18 +20,15 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Sticky Header on Scroll
    */
+  const selectBody = document.querySelector('body');
   const selectHeader = document.querySelector('#header');
   if (selectHeader) {
     let headerOffset = selectHeader.offsetTop;
-    let nextElement = selectHeader.nextElementSibling;
-
     const headerFixed = () => {
       if ((headerOffset - window.scrollY) <= 0) {
-        selectHeader.classList.add('sticked');
-        if (nextElement) nextElement.classList.add('sticked-header-offset');
+        selectBody.classList.add('navSticked');
       } else {
-        selectHeader.classList.remove('sticked');
-        if (nextElement) nextElement.classList.remove('sticked-header-offset');
+        selectBody.classList.remove('navSticked');
       }
     }
     window.addEventListener('load', headerFixed);
