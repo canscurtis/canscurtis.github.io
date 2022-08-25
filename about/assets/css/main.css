@@ -11,11 +11,11 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-    "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
-  --font-primary: "Montserrat", sans-serif;
-  --font-secondary: "Poppins", sans-serif;
+  --font-default: "Open Sans", "Roboto", "Noto Sans TC", system-ui, -apple-system, "Segoe UI",
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: "Montserrat", "Noto Sans TC", sans-serif;
+  --font-secondary: "Poppins", "Noto Sans TC", sans-serif;
 }
 
 /* Colors */
@@ -2083,6 +2083,7 @@ section {
   background-size: cover;
   background-position: left bottom;
   z-index: -1;
+  animation: zoom-in-zoom-out 10s ease-in-out infinite;
 }
 
 .homeCover .homeCover-background-img::after {
@@ -2104,6 +2105,18 @@ section {
   color: var(--color-secondary);
   text-decoration: none;
   font-weight: 600;
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.04, 1.04);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }
 
 /*--------------------------------------------------------------
