@@ -2100,6 +2100,12 @@ section {
   width: 64%;
 }
 
+.homeCover .homeCover-description a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
