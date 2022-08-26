@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Curtis Lee</title>
+    <title>Curtis KT Lee</title>
     <meta
       content="A Master Student in Database System Lab at National Sun Yat-Sen University majoring Computer Science and Engineering."
       name="description"
@@ -31,7 +31,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&family=JetBrains+Mono:wght@100;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
 
@@ -88,10 +88,26 @@
     <section id="topbar" class="topbar d-flex align-items-center">
       <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
-          <div class="include" file="./assets/html/topbarLeft.html"></div>
+          <i class="bi bi-envelope d-flex align-items-center"
+            ><a href="mailto:Curtis@CansCurtis.com">Curtis@CansCurtis.com</a></i
+          >
         </div>
         <div class="social-links d-none d-md-flex align-items-center">
-          <div class="include" file="./assets/html/topbarRight.html"></div>
+          <a href="https://linkedin.com/in/CansCurtis" class="linkedin" target="_blank"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a href="https://facebook.com/CansCurtis" class="facebook" target="_blank"
+            ><i class="bi bi-facebook"></i
+          ></a>
+          <a href="https://instagram.com/CansCurtis" class="instagram" target="_blank"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a href="https://twitter.com/CansCurtis" class="twitter" target="_blank"
+            ><i class="bi bi-twitter"></i
+          ></a>
+          <a href="https://github.com//CansCurtis" class="twitter" target="_blank"
+            ><i class="bi bi-github"></i
+          ></a>
         </div>
       </div>
     </section>
@@ -100,11 +116,39 @@
     <header id="header" class="header d-flex align-items-center">
       <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
         <a href="/" class="logo d-flex align-items-center">
-          <div class="include" file="./assets/html/navbarSiteLogo.html"></div>
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1>Curtis <span>KT Lee</span></h1>
         </a>
         <nav id="navbar" class="navbar">
           <ul>
-            <div class="include" file="./assets/html/navbarItems.html"></div>
+            <li><a href="/about">Home</a></li>
+            <li><a href="/about/#aboutme">Resume</a></li>
+            <li><a href="/maintain">Portfolio</a></li>
+            <li><a href="/mediacoverage">MediaCoverage</a></li>
+            <li><a href="https://blog.canscurtis.com">Blog</a></li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Follow</span> <i class="bi bi-chevron-down dropdown-indicator"></i
+              ></a>
+              <ul>
+                <a href="https://linkedin.com/in/CansCurtis" class="linkedin" target="_blank"
+                  ><i class="bi bi-linkedin"></i>LinkedIn</a
+                >
+                <a href="https://facebook.com/CansCurtis" class="facebook" target="_blank"
+                  ><i class="bi bi-facebook"></i>Facebook</a
+                >
+                <a href="https://instagram.com/CansCurtis" class="instagram" target="_blank"
+                  ><i class="bi bi-instagram"></i>Instagram</a
+                >
+                <a href="https://twitter.com/CansCurtis" class="twitter" target="_blank"
+                  ><i class="bi bi-twitter"></i>Twitter</a
+                >
+                <a href="https://github.com//CansCurtis" class="twitter" target="_blank"
+                  ><i class="bi bi-github"></i>Github</a
+                >
+              </ul>
+            </li>
           </ul>
         </nav>
         <!-- .navbar -->
@@ -113,6 +157,7 @@
         <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       </div>
     </header>
+
     <!-- End Header -->
 
     <!-- ======= homeCover Section ======= -->
@@ -135,7 +180,7 @@
             </p>
             <p>#FrontEnd #NSYSU #NDHU</p>
             <div class="d-flex justify-content-center justify-content-lg-start">
-              <a href="#about" class="btn-get-started">Resume</a>
+              <a href="#aboutme" class="btn-get-started">About Me</a>
             </div>
           </div>
           <div
@@ -155,7 +200,7 @@
     <!-- End homeCover Section -->
 
     <main id="main">
-      <section id="about" class="about">
+      <section id="aboutme" class="about">
         <div class="container" data-aos="fade-up">
           <div class="section-header">
             <h2>About Me</h2>
@@ -208,17 +253,128 @@
                     >@CansCurtis (酷哥 Curtis Lee)</a
                   >
                 </li>
+                <li>
+                  <i class="bi bi-github"></i
+                  ><a href="https://github.com//CansCurtis" target="_blank">@CansCurtis</a>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </section>
       <!-- End About Us Section -->
+
+      <!-- ======= Media Coverage Section ======= -->
+      <section id="mediacoverage" class="homeMediaCov">
+        <div class="container" data-aos="fade-up">
+          <div class="row gy-4">
+            <div class="col-lg-3">
+              <div class="content px-xl-5">
+                <h3>Media <strong>Coverage</strong></h3>
+              </div>
+            </div>
+
+            <div class="col-lg-9">
+              <div
+                class="accordion accordion-flush"
+                id="faqlist"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq-content-1"
+                    >
+                      <span class="num">1.</span>
+                      東華大學舉行110學年度畢業典禮－學成東華，鵬展天下 (JUNE 2022)
+                    </button>
+                  </h3>
+                  <div
+                    id="faq-content-1"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqlist"
+                  >
+                    <div class="accordion-body">
+                      <p>"今年畢業生資訊工程學系國際組李冠廷同學，他就學期間積極參與學生自治，熱心服務，曾擔任過「學生會資訊政委」、「學生議會監察長及學生議員」、「系學會美宣及網管」等，並實際進入多個校級會議擔任學生代表，為同學發聲。另創立東華Google學生開發者社群，成功向Google官方申請創立東華校內的「Google學生開發者社群」，將最新技術資源以及業界資訊帶入校內，與東華校內近200位同學與全球超過1200所大學社群，一同搭建起課內知識與業界實作能力間的橋梁。李同學在學期間成績優異，獲頒多次書卷獎，亦曾於資源教室擔任課輔老師，以所學帶領身旁同學一同成長。"</p>
+                      <p>
+                        <a href="https://www.ndhu.edu.tw/p/406-1000-197321.php?Lang=zh-tw" target="_blank">國立東華大學</a>、
+                        <a href="https://www.cna.com.tw/postwrite/Chi/317342" target="_blank">中央社訊息平台</a>、
+                        <a href="http://www.ksnews.com.tw/index.php/news/contents_page/0001616622" target="_blank">更生日報</a>、
+                        <a href="https://news.pchome.com.tw/living/cna/20220611/index-16549201936134018009.html" target="_blank">PChome新聞</a>、
+                        <a href="https://n.yam.com/Article/20220611267306" target="_blank">蕃薯藤新聞</a>。
+                      </p>
+                  </div>
+                </div>
+                <!-- # news item-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Media Coverage Section -->
     </main>
 
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
-      <div class="include" file="./assets/html/footer.html"></div>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span>Curtis Kuan-Ting Lee</span>
+            </a>
+            <p>Keep Going.</p>
+            <div class="social-links d-flex mt-4">
+              <a href="mailto:Curtis@CansCurtis.com" class="email" target="_blank"
+                ><i class="bi bi-envelope-fill"></i
+              ></a>
+              <a href="https://linkedin.com/in/CansCurtis" class="linkedin" target="_blank"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a href="https://facebook.com/CansCurtis" class="facebook" target="_blank"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="https://instagram.com/CansCurtis" class="instagram" target="_blank"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="https://twitter.com/CansCurtis" class="twitter" target="_blank"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a href="https://github.com/CansCurtis" class="linkedin" target="_blank"
+                ><i class="bi bi-github"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links"></div>
+
+          <div class="col-lg-2 col-6 footer-links"></div>
+
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <p>
+              <strong><i class="bi bi-envelope"></i></strong>
+              <a
+                href="mailto:Curtis@CansCurtis.com"
+                class="email"
+                target="_blank"
+                style="color: white"
+              >
+                Curtis@CansCurtis.com</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Curtis Kuan-Ting Lee</span></strong
+          >. All Rights Reserved.
+        </div>
+      </div>
     </footer>
     <!-- End Footer -->
 
