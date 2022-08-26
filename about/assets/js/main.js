@@ -5,8 +5,17 @@
 * License: https://bootstrapmade.com/license/
 */
 
-document.addEventListener('load', () => {
+document.addEventListener("DOMContentLoaded", () => {
   "use strict";
+
+  $(".include").each(function () {
+    if (!!$(this).attr("file")) {
+      var $includeObj = $(this);
+      $(this).load($(this).attr("file"), function (html) {
+        $includeObj.after(html).remove();
+      });
+    }
+  });
 
   /**
    * Preloader
@@ -132,8 +141,8 @@ document.addEventListener('load', () => {
     const togglescrollTop = () => {
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
-    window.addEventListener('load', headerFixed);
-    document.addEventListener('scroll', headerFixed);
+    window.addEventListener('load', togglescrollTop);
+    document.addEventListener('scroll', togglescrollTop);
     scrollTop.addEventListener('click', window.scrollTo({
       top: 0,
       behavior: 'smooth'
