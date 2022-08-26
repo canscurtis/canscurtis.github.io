@@ -4,7 +4,8 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-document.addEventListener('DOMContentLoaded', () => {
+
+document.addEventListener('load', () => {
   "use strict";
 
   /**
@@ -126,13 +127,13 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Scroll top button
    */
-  const scrollTop = document.querySelector('.scroll-top');
+  const scrollTop = document.querySelector(".scroll-top");
   if (scrollTop) {
-    const togglescrollTop = function() {
+    const togglescrollTop = () => {
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
-    window.addEventListener('load', togglescrollTop);
-    document.addEventListener('scroll', togglescrollTop);
+    window.addEventListener('load', headerFixed);
+    document.addEventListener('scroll', headerFixed);
     scrollTop.addEventListener('click', window.scrollTo({
       top: 0,
       behavior: 'smooth'
