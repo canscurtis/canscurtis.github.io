@@ -45,11 +45,13 @@ body {
 a {
   color: var(--color-primary);
   text-decoration: none;
+  transition: color 0.4s ease;
 }
 
 a:hover {
   color: #00b6a1;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 h1,
@@ -59,6 +61,14 @@ h4,
 h5,
 h6 {
   font-family: var(--font-primary);
+}
+
+h3 {
+  font-family: var(--font-secondary);
+}
+
+p {
+  text-align: justify;
 }
 
 /*--------------------------------------------------------------
