@@ -89,12 +89,14 @@
       .navbar {
         background-color: #373737;
         border-bottom: 6px solid #82d357;
+        box-shadow: 0 0 20px rgb(0 0 0 / 40%);
         /*background-color: #82d357;*/
       }
       .navbar-brand {
         color: #82d357;
         font-weight: 700;
         font-size: 1.4em;
+        transition: color 0.4s;
       }
       .card-sitcon-traffic {
         margin-bottom: 1em;
@@ -102,13 +104,24 @@
       .bg-sitcon-gray {
         background-color: #f4eee1;
       }
+      .titleCard {
+        margin-top: 3em;
+        margin-bottom: 2em;
+      }
       .titleCard .btn {
-        min-width: 140px;
-        margin-right: 0.5em;
-        margin-bottom: 0.5em;
+        width: 100%;
       }
       .titleCard .btn i.bi {
         font-size: 2em;
+      }
+      .titleCard h1 {
+        font-size: 3em;
+        font-weight: 700;
+      }
+      .titleCard p.lead {
+        text-indent: -0.6em;
+        margin-left: 0.6em;
+        margin-bottom: 1.6em;
       }
       .card-sitcon-traffic .img-responsive {
         width: 100%;
@@ -140,21 +153,33 @@
         <!-- <h3>2022 SITCON HOUR OF CODE 高雄場</h3> -->
         <h1>交通方式</h1>
         <p class="lead"><i class="bi bi-geo-alt"></i> 國立中山大學 電資大樓 九樓 EC9023 教室</p>
-        <a class="btn btn-lg btn-sitcon-traffic" href="#mrt" role="button"
-          ><i class="bi bi-train-front"></i><br />捷運/輕軌</a
-        >
-        <a class="btn btn-lg btn-sitcon-traffic" href="#bus" role="button"
-          ><i class="bi bi-bus-front"></i><br />公車</a
-        >
-        <a class="btn btn-lg btn-sitcon-traffic" href="#ubike" role="button"
-          ><i class="bi bi-bicycle"></i><br />YouBike</a
-        >
-        <a class="btn btn-lg btn-sitcon-traffic" href="#car" role="button"
-          ><i class="bi bi-car-front"></i><br />汽車</a
-        >
-        <a class="btn btn-lg btn-sitcon-traffic" href="#motor" role="button"
-          ><i class="bi bi-scooter"></i><br />機車</a
-        >
+        <div class="row g-3">
+          <div class="col-6 col-md-2">
+            <a class="btn btn-lg btn-sitcon-traffic" href="#mrt" role="button"
+              ><i class="bi bi-train-front"></i><br />捷運/輕軌</a
+            >
+          </div>
+          <div class="col-6 col-md-2">
+            <a class="btn btn-lg btn-sitcon-traffic" href="#bus" role="button"
+              ><i class="bi bi-bus-front"></i><br />公車</a
+            >
+          </div>
+          <div class="col-6 col-md-2">
+            <a class="btn btn-lg btn-sitcon-traffic" href="#ubike" role="button"
+              ><i class="bi bi-bicycle"></i><br />YouBike</a
+            >
+          </div>
+          <div class="col-6 col-md-2">
+            <a class="btn btn-lg btn-sitcon-traffic" href="#car" role="button"
+              ><i class="bi bi-car-front"></i><br />汽車</a
+            >
+          </div>
+          <div class="col-6 col-md-2">
+            <a class="btn btn-lg btn-sitcon-traffic" href="#motor" role="button"
+              ><i class="bi bi-scooter"></i><br />機車</a
+            >
+          </div>
+        </div>
       </div>
 
       <div class="card-sitcon-traffic bg-sitcon-gray p-5 rounded" id="mrt">
@@ -163,12 +188,12 @@
         </h2>
         <ol>
           <li>
-            請在 捷運 <span class="badge bg-secondary">西子灣站２號出口</span> ，或輕軌
-            <span class="badge bg-secondary">哈瑪星站</span> 下車。
+            請在 捷運 <span class="badge bg-danger">西子灣站２號出口</span> ，或 輕軌
+            <span class="badge bg-danger">哈瑪星站</span> 下車。
           </li>
           <li>
-            於出口處，轉搭乘 <span class="badge bg-secondary">橘1C</span> 公車，或轉騎乘
-            <span class="badge bg-secondary">YouBike </span>。
+            於出口處，轉搭乘 <span class="badge bg-danger">橘1C</span> 公車，或轉騎乘
+            <span class="badge bg-danger">YouBike </span>。
           </li>
         </ol>
         <p>
@@ -182,11 +207,10 @@
         <h2><i class="bi bi-bus-front"></i> 公車</h2>
         <ol>
           <li>
-            可於 捷運 <span class="badge bg-secondary">西子灣站２號出口</span> (輕軌<span
-              class="badge bg-secondary"
-              >哈瑪星站</span
-            >)，搭乘 <span class="badge bg-secondary">橘1C</span> 公車，至
-            <span class="badge bg-secondary">H棟宿舍 (電資大樓)</span> 下車。
+            可於 捷運 <span class="badge bg-danger">西子灣站２號出口</span> (輕軌
+            <span class="badge bg-danger">哈瑪星站</span>)，搭乘
+            <span class="badge bg-danger">橘1C</span> 公車，至
+            <span class="badge bg-danger">H棟宿舍 (電資大樓)</span> 下車。
           </li>
           <li>下車位置旁，即為電資大樓四樓。</li>
         </ol>
@@ -220,13 +244,13 @@
         <h2><i class="bi bi-bicycle"></i> YouBike</h2>
         <ol>
           <li>
-            可於 捷運 <span class="badge bg-secondary">西子灣站</span> 、輕軌
-            <span class="badge bg-secondary">哈瑪星站</span> ，或其他站點，租借 YouBike。
+            可於 捷運 <span class="badge bg-danger">西子灣站</span> 、輕軌
+            <span class="badge bg-danger">哈瑪星站</span> ，或其他站點，租借 YouBike。
           </li>
           <li>
             騎經
-            <span class="badge bg-secondary">中山大學隧道口</span> 後右轉，騎行至底再次右轉，即可於
-            <span class="badge bg-secondary">材料大樓站</span> 歸還 YouBike。
+            <span class="badge bg-danger">中山大學隧道口</span> 後右轉，騎行至底再次右轉，即可於
+            <span class="badge bg-danger">材料大樓站</span> 歸還 YouBike。
           </li>
           <li>沿著樓梯向上走，即可抵達電資大樓一樓。</li>
         </ol>
@@ -237,13 +261,13 @@
         <p>中山大學腹地狹小，且來賓停車場與活動會場有一定距離，建議改搭乘大眾暈輸工具前往。</p>
         <ol>
           <li>
-            汽車可停放至中山大學 <span class="badge bg-secondary">海堤停車場</span> 或
-            <span class="badge bg-secondary">國研停車場</span>。
+            汽車可停放至中山大學 <span class="badge bg-danger">海堤停車場</span> 或
+            <span class="badge bg-danger">國研停車場</span>。
           </li>
           <li>
-            步行至 <span class="badge bg-secondary">行政大樓站</span> 轉乘
-            <span class="badge bg-secondary">橘1C</span> 公車，並於
-            <span class="badge bg-secondary">H棟宿舍 (電資大樓)</span> 下車。
+            步行至 <span class="badge bg-danger">行政大樓站</span> 轉乘
+            <span class="badge bg-danger">橘1C</span> 公車，並於
+            <span class="badge bg-danger">H棟宿舍 (電資大樓)</span> 下車。
           </li>
         </ol>
 
@@ -299,6 +323,10 @@
             國立中山大學車輛管理要點施行細則
           </a>
         </p>
+      </div>
+
+      <div style="margin: 4em 0; text-align: center">
+        <img src="./assets/sitcon_withname-white.svg" style="width: 80%; max-width: 400px" />
       </div>
     </main>
 
