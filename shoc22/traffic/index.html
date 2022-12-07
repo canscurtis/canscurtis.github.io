@@ -24,6 +24,15 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <!-- Open Graph Protocol -->
+    <meta property="og:locale" content="zh_TW" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://canscurtis.com/shoc22/traffic/assets/ogImg.jpg" />
+    <meta property="og:image:alt" content="2022 SITCON HOUR OF CODE 高雄場" />
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -107,36 +116,22 @@
         border-radius: 8px;
         box-shadow: 0 0 8px rgb(0 0 0 / 0.2);
       }
+      .btn-sitcon-traffic {
+        color: #373737;
+        background-color: #82d357;
+        border: 4px solid #82d357;
+      }
+      .btn-sitcon-traffic:hover {
+        color: white;
+        background-color: #373737;
+        border: 4px solid #82d357;
+      }
     </style>
   </head>
   <body>
     <nav class="navbar navbar-dark navbar-expand-md fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">SITCON HOC | 2022 高雄場</a>
-        <!--
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse"
-          aria-controls="navbarCollapse"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-          </ul>
-        </div>
-        -->
       </div>
     </nav>
 
@@ -145,19 +140,19 @@
         <!-- <h3>2022 SITCON HOUR OF CODE 高雄場</h3> -->
         <h1>交通方式</h1>
         <p class="lead"><i class="bi bi-geo-alt"></i> 國立中山大學 電資大樓 九樓 EC9023 教室</p>
-        <a class="btn btn-lg btn-primary" href="#mrt" role="button"
+        <a class="btn btn-lg btn-sitcon-traffic" href="#mrt" role="button"
           ><i class="bi bi-train-front"></i><br />捷運/輕軌</a
         >
-        <a class="btn btn-lg btn-primary" href="#bus" role="button"
+        <a class="btn btn-lg btn-sitcon-traffic" href="#bus" role="button"
           ><i class="bi bi-bus-front"></i><br />公車</a
         >
-        <a class="btn btn-lg btn-primary" href="#ubike" role="button"
+        <a class="btn btn-lg btn-sitcon-traffic" href="#ubike" role="button"
           ><i class="bi bi-bicycle"></i><br />YouBike</a
         >
-        <a class="btn btn-lg btn-primary" href="#car" role="button"
+        <a class="btn btn-lg btn-sitcon-traffic" href="#car" role="button"
           ><i class="bi bi-car-front"></i><br />汽車</a
         >
-        <a class="btn btn-lg btn-primary" href="#motor" role="button"
+        <a class="btn btn-lg btn-sitcon-traffic" href="#motor" role="button"
           ><i class="bi bi-scooter"></i><br />機車</a
         >
       </div>
@@ -173,9 +168,14 @@
           </li>
           <li>
             於出口處，轉搭乘 <span class="badge bg-secondary">橘1C</span> 公車，或轉騎乘
-            <span class="badge bg-secondary">YouBike </span>。(這邊放到另外兩個的連結)
+            <span class="badge bg-secondary">YouBike </span>。
           </li>
         </ol>
+        <p>
+          轉乘資訊，敬請參考：<br /><a class="btn btn-primary" target="_self" href="#bus"
+            >橘1C 公車</a
+          >&ensp;<a class="btn btn-primary" target="_self" href="#ubike"> YouBike </a>
+        </p>
       </div>
 
       <div class="card-sitcon-traffic bg-sitcon-gray p-5 rounded" id="bus">
@@ -188,7 +188,7 @@
             >)，搭乘 <span class="badge bg-secondary">橘1C</span> 公車，至
             <span class="badge bg-secondary">H棟宿舍 (電資大樓)</span> 下車。
           </li>
-          <li>下車位置旁，即為電資大樓四樓。(這邊補圖)</li>
+          <li>下車位置旁，即為電資大樓四樓。</li>
         </ol>
 
         <div style="margin-left: 1em; margin-bottom: 1em">
@@ -228,22 +228,77 @@
             <span class="badge bg-secondary">中山大學隧道口</span> 後右轉，騎行至底再次右轉，即可於
             <span class="badge bg-secondary">材料大樓站</span> 歸還 YouBike。
           </li>
-          <li>沿著樓梯向上走，即可抵達電資大樓一樓。(這邊補圖)</li>
+          <li>沿著樓梯向上走，即可抵達電資大樓一樓。</li>
         </ol>
       </div>
 
-      <div class="card-sitcon-traffic bg-sitcon-gray p-5 rounded" id="bus">
+      <div class="card-sitcon-traffic bg-sitcon-gray p-5 rounded" id="car">
         <h2><i class="bi bi-car-front"></i> 汽車</h2>
+        <p>中山大學腹地狹小，且來賓停車場與活動會場有一定距離，建議改搭乘大眾暈輸工具前往。</p>
         <ol>
-          <li></li>
+          <li>
+            汽車可停放至中山大學 <span class="badge bg-secondary">海堤停車場</span> 或
+            <span class="badge bg-secondary">國研停車場</span>。
+          </li>
+          <li>
+            步行至 <span class="badge bg-secondary">行政大樓站</span> 轉乘
+            <span class="badge bg-secondary">橘1C</span> 公車，並於
+            <span class="badge bg-secondary">H棟宿舍 (電資大樓)</span> 下車。
+          </li>
         </ol>
+
+        <ul>
+          <li>海堤停車場：小型車每半小時15元，當日最高收費為150元。</li>
+          <li>國研停車場：小型車每半小時15元，當日最高收費為240元。</li>
+        </ul>
+
+        <p>
+          詳細停車場位置，及收費標準，敬請參考：<br /><a
+            class="btn btn-primary"
+            target="_blank"
+            href="https://vehicle.nsysu.edu.tw/files/Licenses/111/%E9%99%84%E4%BB%B68-%E4%BE%86%E8%B3%93%E6%B1%BD%E6%A9%9F%E8%BB%8A%E5%81%9C%E8%BB%8A%E5%A0%B4%E5%9C%B0%E5%9C%96.pdf"
+            >來賓汽機車停車場地圖 </a
+          >&ensp;<a
+            class="btn btn-primary"
+            target="_blank"
+            href="https://law.nsysu.edu.tw/rule/file/202011111019210832.pdf"
+          >
+            車輛管理要點施行細則
+          </a>
+        </p>
+        <p>
+          橘1C 公車資訊，敬請參考：<br /><a
+            class="btn btn-primary"
+            target="_blank"
+            href="https://ibus.nsysu.edu.tw/Bus/buspath.html?RID=9012&RName=%5B%E6%A9%981C%5D%20-%20SITCON%20HOC%202022&RDP=%20%E9%9B%BB%E8%B3%87%E5%A4%A7%E6%A8%93(H%E6%A3%9F%E5%AE%BF%E8%88%8D)&RDN=%20%E6%8D%B7%E9%81%8B%E8%A5%BF%E5%AD%90%E7%81%A32%E8%99%9F%E5%87%BA%E5%8F%A3(%E8%BC%95%E8%BB%8C%E5%93%88%E7%91%AA%E6%98%9F)"
+            >橘1C 即時動態</a
+          >&ensp;<a
+            class="btn btn-primary"
+            target="_blank"
+            href="https://ibus.nsysu.edu.tw//Public/Picture/F1905680147487000000.jpg"
+          >
+            橘1C 班次表
+          </a>
+        </p>
       </div>
 
-      <div class="card-sitcon-traffic bg-sitcon-gray p-5 rounded" id="bus">
+      <div class="card-sitcon-traffic bg-sitcon-gray p-5 rounded" id="motor">
         <h2><i class="bi bi-scooter"></i> 機車</h2>
-        <ol>
-          <li></li>
-        </ol>
+        <p>中山大學腹地狹小，且來賓停車場車位有限，建議改搭乘大眾暈輸工具前往。</p>
+        <p>
+          詳細停車場位置，及收費標準，敬請參考：<br /><a
+            class="btn btn-primary"
+            target="_blank"
+            href="https://vehicle.nsysu.edu.tw/files/Licenses/111/%E9%99%84%E4%BB%B68-%E4%BE%86%E8%B3%93%E6%B1%BD%E6%A9%9F%E8%BB%8A%E5%81%9C%E8%BB%8A%E5%A0%B4%E5%9C%B0%E5%9C%96.pdf"
+            >國立中山大學來賓汽機車停車場地圖 </a
+          >&ensp;<a
+            class="btn btn-primary"
+            target="_blank"
+            href="https://law.nsysu.edu.tw/rule/file/202011111019210832.pdf"
+          >
+            國立中山大學車輛管理要點施行細則
+          </a>
+        </p>
       </div>
     </main>
 
