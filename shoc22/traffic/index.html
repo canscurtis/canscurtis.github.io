@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="2022 SITCON HOUR OF CODE 高雄場" />
+    <meta name="author" content="Curtis Lee" />
+    <meta name="generator" content="Hugo 0.84.0" />
+    <title>SITCON HOC | 2022 高雄場</title>
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto+Slab:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Image Box -->
+    <link rel="stylesheet" href="./assets/imagebox.min.css" />
+    <script src="./assets/imagebox.min.js"></script>
+
+    <style>
+      * {
+        font-family: "Roboto", "Noto Sans TC", sans-serif;
+      }
+      html {
+        scroll-padding-top: 66px; /* height of sticky header */
+      }
+      body {
+        min-height: 75rem;
+        padding-top: 4.5rem;
+        background-color: #373737;
+      }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .navbar {
+        background-color: #373737;
+        border-bottom: 6px solid #82d357;
+        /*background-color: #82d357;*/
+      }
+      .navbar-brand {
+        color: #82d357;
+        font-weight: 700;
+        font-size: 1.4em;
+      }
+      .card-sitcon-traffic {
+        margin-bottom: 1em;
+      }
+      .bg-sitcon-gray {
+        background-color: #f4eee1;
+      }
+      .titleCard .btn {
+        min-width: 140px;
+        margin-right: 0.5em;
+        margin-bottom: 0.5em;
+      }
+      .titleCard .btn i.bi {
+        font-size: 2em;
+      }
+      .card-sitcon-traffic .img-responsive {
+        width: 100%;
+        margin: 0.6em 1em;
+        border-radius: 8px;
+        box-shadow: 0 0 8px rgb(0 0 0 / 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">SITCON HOC | 2022 高雄場</a>
+        <!--
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+        -->
+      </div>
+    </nav>
+
+    <main class="container">
+      <div class="p-4 titleCard" style="color: white">
+        <!-- <h3>2022 SITCON HOUR OF CODE 高雄場</h3> -->
+        <h1>交通方式</h1>
+        <p class="lead"><i class="bi bi-geo-alt"></i> 國立中山大學 電資大樓 九樓 EC9023 教室</p>
+        <a class="btn btn-lg btn-primary" href="#mrt" role="button"
+          ><i class="bi bi-train-front"></i><br />捷運/輕軌</a
+        >
+        <a class="btn btn-lg btn-primary" href="#bus" role="button"
+          ><i class="bi bi-bus-front"></i><br />公車</a
+        >
+        <a class="btn btn-lg btn-primary" href="#ubike" role="button"
+          ><i class="bi bi-bicycle"></i><br />YouBike</a
+        >
+        <a class="btn btn-lg btn-primary" href="#car" role="button"
+          ><i class="bi bi-car-front"></i><br />汽車</a
+        >
+        <a class="btn btn-lg btn-primary" href="#motor" role="button"
+          ><i class="bi bi-scooter"></i><br />機車</a
+        >
+      </div>
+
+      <div class="card-sitcon-traffic bg-sitcon-gray p-5 rounded" id="mrt">
+        <h2>
+          <i class="bi bi-train-front"></i> 捷運 / <i class="bi bi-train-lightrail-front"></i> 輕軌
+        </h2>
+        <ol>
+          <li>
+            請在 捷運<span class="badge bg-secondary">西子灣站２號出口</span>，或輕軌<span
+              class="badge bg-secondary"
+              >哈瑪星站</span
+            >下車。
+          </li>
+          <li>
+            於出口處，轉搭乘<span class="badge bg-secondary">橘1C</span>公車，或轉騎乘<span
+              class="badge bg-secondary"
+              >YouBike</span
+            >。(這邊放到另外兩個的連結)
+          </li>
+        </ol>
+      </div>
+
+      <div class="card-sitcon-traffic bg-sitcon-gray p-5 rounded" id="bus">
+        <h2><i class="bi bi-bus-front"></i> 公車</h2>
+        <ol>
+          <li>
+            可於 捷運<span class="badge bg-secondary">西子灣站２號出口</span> (輕軌<span
+              class="badge bg-secondary"
+              >哈瑪星站</span
+            >)，搭乘 <span class="badge bg-secondary">橘1C</span> 公車，至
+            <span class="badge bg-secondary">H棟宿舍 (電資大樓)</span> 下車。
+          </li>
+          <li>下車位置旁，即為電資大樓四樓。(這邊補圖)</li>
+        </ol>
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <img data-imagebox class="img-responsive" src="./assets/bus_ext2.jpg" />
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <img data-imagebox class="img-responsive" src="./assets/bus_ec.jpg" />
+          </div>
+        </div>
+      </div>
+
+      <div class="card-sitcon-traffic bg-sitcon-gray p-5 rounded" id="ubike">
+        <h2><i class="bi bi-bicycle"></i> YouBike</h2>
+        <ol>
+          <li>
+            可於 捷運<span class="badge bg-secondary">西子灣站</span>、輕軌<span
+              class="badge bg-secondary"
+              >哈瑪星站</span
+            >，或其他站點，租借 YouBike。
+          </li>
+          <li>
+            騎經<span class="badge bg-secondary">中山大學隧道口</span
+            >後右轉，騎行至底再次右轉，即可於<span class="badge bg-secondary">材料大樓站</span>歸還
+            YouBike。
+          </li>
+          <li>沿著樓梯向上走，即可抵達電資大樓一樓。(這邊補圖)</li>
+        </ol>
+      </div>
+
+      <div class="card-sitcon-traffic bg-sitcon-gray p-5 rounded" id="bus">
+        <h2><i class="bi bi-car-front"></i> 汽車</h2>
+        <ol>
+          <li></li>
+        </ol>
+      </div>
+
+      <div class="card-sitcon-traffic bg-sitcon-gray p-5 rounded" id="bus">
+        <h2><i class="bi bi-scooter"></i> 機車</h2>
+        <ol>
+          <li></li>
+        </ol>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+  </body>
+</html>
