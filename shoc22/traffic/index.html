@@ -1,10 +1,12 @@
 <!DOCTYPE html>
+<!-- Author: Curtis KT Lee  -->
+<!-- CansCurtis.com  -->
 <html lang="zh-TW">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="2022 SITCON HOUR OF CODE 高雄場" />
-    <meta name="author" content="Curtis Lee" />
+    <meta name="author" content="Curtis KT Lee" />
     <meta name="generator" content="Hugo 0.84.0" />
     <title>交通方式 | SITCON HOC 2022 高雄場</title>
 
@@ -389,6 +391,7 @@
         <img src="./assets/sitcon_withname-white.svg" style="width: 80%; max-width: 400px" />
       </div>
       <div
+        id="siteStates"
         style="
           margin: 2em 0 2em 0;
           text-align: left;
@@ -406,5 +409,10 @@
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <script>
+      const html_siteStates = document.getElementById("siteStates");
+      html_siteStates.innerHTML =
+        '<img src="https://SiteStates.com/show/image/33379.jpg?timestamp=' + Date.now() + '" />';
+    </script>
   </body>
 </html>
