@@ -348,42 +348,6 @@
                     >An Efficient BPIT-Based Algorithm with Bit Patterns for Mining Maximal and
                     Closed High Utility Itemsets in the Dynamic Transactional Database</b
                   ><br />
-                  The technique of mining High Utility Itemsets (HUIs) has been one of the most
-                  crucial applications in the field of data mining over the past few decades. This
-                  is because that it takes the distinction of not only unit profits but also
-                  purchased quantities into consideration. Nevertheless, the huge number of HUIs
-                  extracted from the database might be too extensive to give a practical analysis.
-                  In this case, mining HUIs in concise representations, such as the Maximal High
-                  Utility Itemsets (MaxHUIs) and the Closed High Utility Itemsets (CHUIs), is a
-                  viable solution to address the aforementioned issues. This is because that it can
-                  significantly decrease the number of the extracted results and improve the
-                  execution speed. Among several well-known algorithms for mining the MaxHUIs and
-                  the CHUIs, the MaxC-HUIM algorithm has been proposed as a strategy to achieve both
-                  goals with the Transaction Prefix Utility Tree structure. However, this algorithm
-                  only discusses the method in a static database, and it involves performing two
-                  scans of the original database in order to create the entire data structure.
-                  Moreover, the MaxC-HUIM algorithm uses two separated structures to store the
-                  results of MaxHUIs and CHUIs. In fact, these two results are related, and MaxHUIs
-                  are the subsets of CHUIs. Therefore, in this thesis, in contrast to the MaxC-HUIM
-                  algorithm, we propose the BPIT-Based algorithm which utilizes a single list
-                  structure to store both MaxHUIs and CHUIs, differentiated by a specific flag. The
-                  reason is that each individual MaxHUI is a subset of CHUIs, which is a beneficial
-                  relationship to decrease the memory usage. Moreover, in order to deal with
-                  transactions in the real world, mining itemsets dynamically is necessary to keep
-                  up with the fast-updating purchased records in modern marketing businesses.
-                  Therefore, our proposed BPIT-Based algorithm can conduct the mining process in a
-                  dynamic database. That is, we can complete the mining efficiently when an update
-                  occurs, without the need to reconstruct the entire data structure. In addition, we
-                  utilize the boolean representation to distinguish the occurrence of a certain
-                  itemset, so that the operation can be performed efficiently, resulting in a
-                  reduction of execution time. Consequently, to achieve these goals, we propose the
-                  efficient BPIT-Based algorithm based on the BPIT structure for mining MaxHUIs and
-                  CHUIs in a dynamic database. Besides, we propose the BPIT structure which
-                  comprises the Total Summary List and the advanced Utility-List Buffer, resulting
-                  in a holistic solution for mining MaxHUIs and CHUIs simultaneously. From our
-                  performance study, we have shown that our proposed approach is more efficient than
-                  the MaxC-HUIM algorithm.<br />
-                  <br />
                   Keywords: Concise Representation, Data Mining, Dynamic Database, High Utility
                   Itemsets, Utility-List
                 </li>
