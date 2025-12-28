@@ -1,1081 +1,797 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <!-- HTML Meta Tags -->
-    <title>Curtis KT Lee</title>
-    <meta
-      content="#OpenToWork - A graduated Master Student in Database System Lab at National Sun Yat-Sen University majoring Computer Science and Engineering."
-      name="description"
-    />
-    <meta
-      content="酷哥, 冠廷, Curtis, 中山, 東華, 資工, 電腦科學, NSYSU, NDHU, CSE, CS, Computer Science, 前端, 工程師, Engineer, SWE, RD, FrontEnd"
-      name="keywords"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://curtis.tw" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Curtis Kuan-Ting Lee" />
-    <meta property="og:description" content="Curtis Kuan-Ting Lee from Taiwan.  #OpenToWork" />
-    <meta property="og:image" content="https://curtis.tw/about/assets/img/ogImg_2.png" />
-    <meta property="og:image:alt" content="Curtis Kuan-Ting Lee" />
-    <meta property="og:image:type" content="image/png" />
+  <!-- HTML Meta Tags -->
+  <title>Curtis KT Lee</title>
+  <meta
+    content="A graduated Master Student in Database System Lab at National Sun Yat-Sen University majoring Computer Science and Engineering."
+    name="description" />
+  <meta
+    content="酷哥, 冠廷, Curtis, 中山, 東華, 資工, 電腦科學, NSYSU, NDHU, CSE, CS, Computer Science, 前端, 工程師, Engineer, SWE, RD, FrontEnd"
+    name="keywords" />
 
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta property="twitter:domain" content="curtis.tw" />
-    <meta property="twitter:url" content="https://curtis.tw" />
-    <meta name="twitter:title" content="Curtis Kuan-Ting Lee" />
-    <meta
-      name="twitter:description"
-      content="#OpenToWork - A graduated Master Student in Database System Lab at National Sun Yat-Sen University majoring Computer Science and Engineering."
-    />
-    <meta name="twitter:image" content="https://curtis.tw/about/assets/img/ogImg_2.png" />
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://curtis.tw" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Curtis Kuan-Ting Lee" />
+  <meta property="og:description" content="Curtis Kuan-Ting Lee from Taiwan.  #OpenToWork" />
+  <meta property="og:image" content="https://curtis.tw/about/assets/img/ogImg_2.png" />
+  <meta property="og:image:alt" content="Curtis Kuan-Ting Lee" />
+  <meta property="og:image:type" content="image/png" />
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y104Y9J31D"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-Y104Y9J31D");
-    </script>
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="curtis.tw" />
+  <meta property="twitter:url" content="https://curtis.tw" />
+  <meta name="twitter:title" content="Curtis Kuan-Ting Lee" />
+  <meta name="twitter:description"
+    content="A graduated Master Student in Database System Lab at National Sun Yat-Sen University majoring Computer Science and Engineering." />
+  <meta name="twitter:image" content="https://curtis.tw/about/assets/img/ogImg_2.png" />
 
-    <!-- Favicons -->
-    <link href="./assets/img/favicon.ico" rel="icon" />
-    <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y104Y9J31D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-Y104Y9J31D");
+  </script>
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&family=JetBrains+Mono:wght@100;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Favicons -->
+  <link href="./assets/img/favicon.ico" rel="icon" />
+  <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-    <!-- Vendor CSS Files -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css"
-      integrity="sha512-XWTTruHZEYJsxV3W/lSXG1n3Q39YIWOstqvmFsdNEEQfHoZ6vm6E9GK2OrF6DSJSpIbRbi+Nn0WDPID9O7xB2Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.css"
-      integrity="sha512-CaTMQoJ49k4vw9XO0VpTBpmMz8XpCWP5JhGmBvuBqCOaOHWENWO1CrVl09u4yp8yBVSID6smD4+gpzDJVQOPwQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css"
-      integrity="sha512-T+KoG3fbDoSnlgEXFQqwcTC9AdkFIxhBlmoaFqYaIjq2ShhNwNao9AKaLUPMfwiBPL0ScxAtc+UYbHAgvd+sjQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.css"
-      integrity="sha512-ipO1yoQyZS3BeIuv2A8C5AwQChWt2Pi4KU3nUvXxc4TKr8QgG8dPexPAj2JGsJD6yelwKa4c7Y2he9TTkPM4Dg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&family=JetBrains+Mono:wght@100;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet" />
 
-    <!-- Template Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet" />
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css"
+    integrity="sha512-XWTTruHZEYJsxV3W/lSXG1n3Q39YIWOstqvmFsdNEEQfHoZ6vm6E9GK2OrF6DSJSpIbRbi+Nn0WDPID9O7xB2Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.css"
+    integrity="sha512-CaTMQoJ49k4vw9XO0VpTBpmMz8XpCWP5JhGmBvuBqCOaOHWENWO1CrVl09u4yp8yBVSID6smD4+gpzDJVQOPwQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css"
+    integrity="sha512-T+KoG3fbDoSnlgEXFQqwcTC9AdkFIxhBlmoaFqYaIjq2ShhNwNao9AKaLUPMfwiBPL0ScxAtc+UYbHAgvd+sjQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.css"
+    integrity="sha512-ipO1yoQyZS3BeIuv2A8C5AwQChWt2Pi4KU3nUvXxc4TKr8QgG8dPexPAj2JGsJD6yelwKa4c7Y2he9TTkPM4Dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1396109371052813"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css?ver=2512281630" rel="stylesheet" />
 
-  <body>
-    <!-- ======= Header ======= -->
-    <section id="topbar" class="topbar d-flex align-items-center">
-      <div class="container d-flex justify-content-center justify-content-md-between">
-        <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"
-            ><a href="mailto:Curtis@Curtis.tw">Curtis@Curtis.tw</a></i
-          >
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1396109371052813"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <section id="topbar" class="topbar d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:Curtis@Curtis.tw">Curtis@Curtis.tw</a></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="https://linkedin.com/in/CansCurtis" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://facebook.com/CansCurtis" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://instagram.com/CansCurtis" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://github.com/CansCurtis" class="twitter" target="_blank"><i class="bi bi-github"></i></a>
+      </div>
+    </div>
+  </section>
+  <!-- End Top Bar -->
+
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="/" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>Curtis <span>KT Lee</span></h1>
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#aboutme">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#press">Press</a></li>
+          <li><a href="https://blog.canscurtis.com">Blog</a></li>
+          <li class="dropdown">
+            <a href="#"><span>Follow</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <a href="https://linkedin.com/in/CansCurtis" class="linkedin" target="_blank"><i
+                  class="bi bi-linkedin"></i>LinkedIn</a>
+              <a href="https://facebook.com/CansCurtis" class="facebook" target="_blank"><i
+                  class="bi bi-facebook"></i>Facebook</a>
+              <a href="https://instagram.com/CansCurtis" class="instagram" target="_blank"><i
+                  class="bi bi-instagram"></i>Instagram</a>
+              <a href="https://g0v.social/@CansCurtis" class="mastodon" target="_blank" rel="me"><i
+                  class="bi bi-mastodon"></i>Mastodon</a>
+              <a href="https://github.com/CansCurtis" class="github" target="_blank"><i
+                  class="bi bi-github"></i>Github</a>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- .navbar -->
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+    </div>
+  </header>
+
+  <!-- End Header -->
+
+  <!-- ======= homeCover Section ======= -->
+  <section id="homeCover" class="homeCover">
+    <div class="homeCover-background-img"></div>
+    <div class="container position-relative">
+      <div class="row gy-5" data-aos="fade-in">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
+          <h2>Curtis Kuan-Ting Lee</h2>
+          <p class="homeCover-description">
+            CIM Software Engineer at TSMC, <br />
+            Focusing on Frontend Web Development.
+          </p>
+          <!--
+          <p class="homeCover-description">
+            Just finished my Master degree <br />In
+            <a href="https://db.cse.nsysu.edu.tw" target="_blank">Database Systems Lab</a> <br />At
+            <a href="https://www.nsysu.edu.tw" target="_blank">National Sun Yat-Sen University</a><br />
+            Majoring
+            <a href="https://cse.nsysu.edu.tw" target="_blank">Computer Science and Engineering</a>.
+          </p>
+          -->
+          <p>#FrontEnd&ensp;#Web&ensp;#Software<br />#TSMC&ensp;#NSYSU&ensp;#NDHU</p>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="#aboutme" class="btn-get-started">About Me</a>
+          </div>
         </div>
-        <div class="social-links d-none d-md-flex align-items-center">
-          <a href="https://linkedin.com/in/CansCurtis" class="linkedin" target="_blank"
-            ><i class="bi bi-linkedin"></i
-          ></a>
-          <a href="https://facebook.com/CansCurtis" class="facebook" target="_blank"
-            ><i class="bi bi-facebook"></i
-          ></a>
-          <a href="https://instagram.com/CansCurtis" class="instagram" target="_blank"
-            ><i class="bi bi-instagram"></i
-          ></a>
-          <!-- <a href="https://twitter.com/CansCurtis" class="twitter" target="_blank"
-            ><i class="bi bi-twitter"></i
-          ></a> -->
-          <a href="https://github.com/CansCurtis" class="twitter" target="_blank"
-            ><i class="bi bi-github"></i
-          ></a>
+        <div class="col-lg-6 order-1 order-lg-2"
+          style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center">
+          <img src="./assets/img/curtis-profile-pic-mopcon2024.jpg" class="img-fluid homeCover-img-curtis"
+            data-aos="zoom-out" data-aos-delay="100" />
         </div>
       </div>
-    </section>
-    <!-- End Top Bar -->
+    </div>
+  </section>
+  <!-- End homeCover Section -->
 
-    <header id="header" class="header d-flex align-items-center">
-      <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-        <a href="/" class="logo d-flex align-items-center">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/logo.png" alt=""> -->
-          <h1>Curtis <span>KT Lee</span></h1>
-        </a>
-        <nav id="navbar" class="navbar">
-          <ul>
-            <li><a href="/#">Home</a></li>
-            <li><a href="#aboutme">Resume</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#mediacoverage">MediaCoverage</a></li>
-            <li><a href="https://blog.canscurtis.com">Blog</a></li>
-            <li class="dropdown">
-              <a href="#"
-                ><span>Follow</span> <i class="bi bi-chevron-down dropdown-indicator"></i
-              ></a>
-              <ul>
-                <a href="https://linkedin.com/in/CansCurtis" class="linkedin" target="_blank"
-                  ><i class="bi bi-linkedin"></i>LinkedIn</a
-                >
-                <a href="https://facebook.com/CansCurtis" class="facebook" target="_blank"
-                  ><i class="bi bi-facebook"></i>Facebook</a
-                >
-                <a href="https://instagram.com/CansCurtis" class="instagram" target="_blank"
-                  ><i class="bi bi-instagram"></i>Instagram</a
-                >
-                <!-- <a href="https://twitter.com/CansCurtis" class="twitter" target="_blank"
-                  ><i class="bi bi-twitter"></i>Twitter</a
-                > -->
-                <a href="https://g0v.social/@CansCurtis" class="mastodon" target="_blank" rel="me"
-                  ><i class="bi bi-mastodon"></i>Mastodon</a
-                >
-                <a href="https://github.com/CansCurtis" class="github" target="_blank"
-                  ><i class="bi bi-github"></i>Github</a
-                >
-              </ul>
-            </li>
-          </ul>
-        </nav>
-        <!-- .navbar -->
-
-        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-      </div>
-    </header>
-
-    <!-- End Header -->
-
-    <!-- ======= homeCover Section ======= -->
-    <section id="homeCover" class="homeCover">
-      <div class="homeCover-background-img"></div>
-      <div class="container position-relative">
-        <div class="row gy-5" data-aos="fade-in">
-          <div
-            class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start"
-          >
-            <h2>Curtis Kuan-Ting Lee</h2>
-            <p class="homeCover-description">
-              Just finished my Master degree <br />In
-              <a href="https://db.cse.nsysu.edu.tw" target="_blank">Database Systems Lab</a> <br />At
-              <a href="https://www.nsysu.edu.tw" target="_blank">National Sun Yat-Sen University</a
-              ><br />
-              Majoring
-              <a href="https://cse.nsysu.edu.tw" target="_blank">Computer Science and Engineering</a
-              >.
-            </p>
-            <p>#OpenToWork #FrontEnd #BackEnd #SoftwareEngineer <br/>#NSYSU #NDHU</p>
-            <div class="d-flex justify-content-center justify-content-lg-start">
-              <a href="#aboutme" class="btn-get-started">About Me</a>
-            </div>
-          </div>
-          <div
-            class="col-lg-6 order-1 order-lg-2"
-            style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center"
-          >
-            <img
-              src="./assets/img/curtis-profile-pic.jpg"
-              class="img-fluid homeCover-img-curtis"
-              data-aos="zoom-out"
-              data-aos-delay="100"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End homeCover Section -->
-
-    <main id="main">
-      <section id="aboutme" class="about">
-        <div class="container" data-aos="fade-up">
-          <div class="row gy-4">
-            <div class="col-lg-8 content">
-              <h3>Resume 
-                <span style="color: #EA4335; border: 3px solid #EA4335; font-size: 0.6em; border-radius: 80px; padding: 2px 16px;">#OpenToWork</span>
-              </h3>
-              <ul>
-                <li>
-                  <i class="bi bi-file-earmark-pdf-fill"></i>PDF File (English)</b><br />
-                  <a href="/resume/" target="_blank">https://Curtis.tw/resume</a>
-                </li>
-              </ul>
-
-              <h3 style="margin-top: 1.6em">Education</h3>
-              <ul>
-                <li>
-                  <i class="bi bi-mortarboard-fill"></i
-                  ><b>National Sun Yat-Sen University, Taiwan</b><br />
-                  M.S. in Computer Science and Engineering<br />
-                  Member in Database Systems Lab, focusing on data mining techniques<br />
-                  September 2022 – June 2024
-                </li>
-                <li>
-                  <i class="bi bi-mortarboard-fill"></i><b>National Dong Hwa University, Taiwan</b
-                  ><br />
-                  B.S. in Computer Science and Information Engineering
-                  <small>(English-Taught International Program)</small><br />
-                  September 2018 – June 2022
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-lg-4 content">
-              <h3>Contact</h3>
-              <ul>
-                <li>
-                  <i class="bi bi-envelope-fill"></i
-                  ><a href="mailto:Curtis@Curtis.tw" target="_blank">Curtis@Curtis.tw</a>
-                </li>
-                <li>
-                  <i class="bi bi-linkedin"></i
-                  ><a href="https://linkedin.com/in/CansCurtis" target="_blank">@CansCurtis</a>
-                </li>
-                <li>
-                  <i class="bi bi-facebook"></i
-                  ><a href="https://facebook.com/CansCurtis" target="_blank"
-                    >@CansCurtis (冠軍酷哥)</a
-                  >
-                </li>
-                <li>
-                  <i class="bi bi-instagram"></i
-                  ><a href="https://instagram.com/CansCurtis" target="_blank"
-                    >@CansCurtis (酷哥 Curtis Lee)</a
-                  >
-                </li>
-                <!--
-                <li>
-                  <i class="bi bi-twitter"></i
-                  ><a href="https://twitter.com/CansCurtis" target="_blank"
-                    >@CansCurtis (酷哥 Curtis Lee)</a
-                  >
-                </li>
-                -->
-                <li>
-                  <i class="bi bi-github"></i
-                  ><a href="https://github.com/CansCurtis" target="_blank">@CansCurtis</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-lg-12 content">
-              <h3 style="margin-top: 1.6em">Experience</h3>
-              <ul>
-                <li>
-                  <i class="bi bi-info-circle-fill"></i
-                  ><b>助教 - 資料庫系統 課程 - 國立中山大學資訊工程學系</b><br />FEB 2024 - JUN 2024
-                </li>
-                <li>
-                  <i class="bi bi-info-circle-fill"></i
-                  ><b>助教 - 編譯器製作 課程 - 國立中山大學資訊工程學系</b><br />FEB 2023 - JUN 2023
-                </li>
-                <li>
-                  <i class="bi bi-info-circle-fill"></i
-                  ><b>網站維護/影片後製/社群小編 - 國立東華大學資訊工程學系</b
-                  ><br />為系所課程與計畫，製作活動與專案之成果影片。並配合遠距教學，製作專供系內同學瀏覽的歷屆畢業專題成果展示網頁。<br />JUN
-                  2020 - 2024
-                </li>
-                <li>
-                  <i class="bi bi-info-circle-fill"></i><b>課輔老師 - 國立東華大學資源教室</b
-                  ><br />為校內同學，提供每週2~3小時的程式設計相關課後輔導。<br />FEB 2021 - JUN
-                  2021
-                </li>
-              </ul>
-
-              <h3 style="margin-top: 1.6em">Licenses & Certifications</h3>
-              <ul>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i><b>CPE - Professional Level</b><br />
-                  Ranking: 82/2561 (3.2%)<br />
-                  Problems Solved: 5/7<br />
-                  Test Date: March 22, 2022
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i><b>TOEIC - Golden Certificate</b><br />
-                  Score: 905<br />
-                  Test Date: February 20, 2022
-                </li>
-                <li>
-                  <i class="bi bi-check-circle-fill"></i
-                  ><b>Google - Fundamentals of Digital Marketing Certificate</b><br />
-                  Issued Date: August 04, 2018
-                </li>
-              </ul>
-
-              <h3 style="margin-top: 1.6em">Thesis</h3>
-              <ul>
-                <li>
-                  <i class="bi bi-arrow-right-circle-fill"></i
-                  ><b
-                    >An Efficient BPIT-Based Algorithm with Bit Patterns for Mining Maximal and
-                    Closed High Utility Itemsets in the Dynamic Transactional Database</b
-                  ><br />
-                  Keywords: Concise Representation, Data Mining, Dynamic Database, High Utility
-                  Itemsets, Utility-List
-                </li>
-              </ul>
-
-              <h3 style="margin-top: 1.6em">Conference Paper</h3>
-              <ul>
-                <li>
-                  <i class="bi bi-arrow-right-circle-fill"></i
-                  ><b
-                    >An Efficient Algorithm for Mining High Average Utility Patterns Based on the
-                    UBLN-Tree</b
-                  ><br />
-                  Authors: Ye-In Chang, Po-Chun Chuang, Yu-Zhen Yang, Kuan-Ting Lee<br />
-                  Conference: IEEE 10th International Conference on Applied System Innovation (IEEE
-                  ICASI 2024), Kyoto, Japan
-                </li>
-              </ul>
-
-              <h3 style="margin-top: 1.6em">Organizational Participation</h3>
-              <ul>
-                <li>
-                  <i class="bi bi-suit-heart-fill"></i>時間：2022-2024 <br />單位：國立中山大學
-                  <br />職稱：校務會議 工學院學生代表 (2022-2024)<br />
-                  &emsp;&emsp;&emsp;校務資訊化委員會 學生代表 (2023-2024)<br />
-                  &emsp;&emsp;&emsp;學生事務委員會 學生代表 (2023-2024)<br />
-                </li>
-                <li>
-                  <i class="bi bi-suit-heart-fill"></i>時間：2021-2022
-                  <br />單位：國立東華大學學生會 <br />職稱：資訊政委 <br />
-                  說明：為學生會建立官方網站及活動紀錄查詢系統，並為各項學術活動與學權議題提供意見，使資訊能以更良好的方式傳遞，激起更多校內同學的共鳴與參與。
-                </li>
-                <li>
-                  <i class="bi bi-suit-heart-fill"></i>時間：2021-迄今
-                  <br />單位：NDHU東華學生交流版 <br />職稱：臉書社群共同管理員 <br />
-                  說明：管理「NDHU東華學生交流版」，提供校內師生以真實身份進行良善交流的平臺，藉以討論議題或宣傳活動。
-                </li>
-                <li>
-                  <i class="bi bi-suit-heart-fill"></i>時間：2020-2021
-                  <br />單位：Google學生開發者社群@東華 <br />職稱：Lead (社群校園負責人) <br />
-                  說明：成功向Google
-                  Developers官方申請成立校內社群，將來自Google官方，以及全球超過1200所大學社群的最新技術與學習資源帶入校內，與東華校內近200位同學一同搭建起課內知識與業界實作能力間的橋梁。
-                </li>
-                <li>
-                  <i class="bi bi-suit-heart-fill"></i>時間：2019-2021
-                  <br />單位：國立東華大學學生議會 <br />職稱：理工學院學生議員 (第九屆~第十屆)
-                  <br />
-                  說明：作為學生與校方間的溝通橋樑，持續反應校內師生的意見。同時於
-                  性別平等教育委員會、圖書資訊服務諮詢委員會、校級課程委員會、教務會議、資通安全小組會議
-                  等校級會議擔任學生代表，傳遞學生端的聲音。
-                </li>
-                <li>
-                  <i class="bi bi-suit-heart-fill"></i>時間：2018-2019
-                  <br />單位：國立東華大學資工系學會 <br />職稱：美宣兼網管 <br />
-                  說明：為系學會建立官方網站，並製作活動宣傳海報與圖片。期間也曾為系所製作多部研究成果宣傳影片。
-                </li>
-              </ul>
-
-              <h3 style="margin-top: 1.6em">Award</h3>
-              <ul>
-                <li>
-                  <i class="bi bi-award-fill"></i><b>在校服務優良獎</b
-                  ><br />國立東華大學110學年度畢業典禮
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End About Us Section -->
-
-      <!-- ======= Portfolio Section ======= -->
-      <section id="portfolio" class="portfolio sections-bg">
-        <div class="container" data-aos="fade-up">
-          <div class="section-header">
-            <h2>Portfolio</h2>
-          </div>
-
-          <div
-            class="portfolio-isotope"
-            data-portfolio-filter="*"
-            data-portfolio-layout="masonry"
-            data-portfolio-sort="original-order"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div>
-              <ul class="portfolio-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-websiteuiux">Website UI/UX</li>
-                <li data-filter=".filter-video">Video Editing</li>
-                <li data-filter=".filter-socialmediamanager">Social Media Manager</li>
-              </ul>
-              <!-- End Portfolio Filters -->
-            </div>
-
-            <div class="row gy-4 portfolio-container">
-              <div class="col-xl-4 col-md-6 portfolio-item filter-websiteuiux">
-                <div class="portfolio-wrap">
-                  <a
-                    href="assets/img/portfolio/2023-nsysu-demo-booking.jpg"
-                    data-gallery="portfolio-gallery-app"
-                    class="glightbox"
-                    ><img
-                      src="assets/img/portfolio/2023-nsysu-demo-booking.jpg"
-                      class="img-fluid"
-                      alt=""
-                  /></a>
-                  <div class="portfolio-info">
-                    <h4>
-                      <a
-                        href="https://booking.nsysu.dev/event/idb231/"
-                        target="_blank"
-                        title="More Details"
-                        >課程 Demo 時段預約系統<br /><br
-                      /></a>
-                    </h4>
-                    <p>2023, Website, UI/UX, PHP</p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div class="col-xl-4 col-md-6 portfolio-item filter-websiteuiux">
-                <div class="portfolio-wrap">
-                  <a
-                    href="assets/img/portfolio/2023-ndhu-csie-gradrreviewsys.jpg"
-                    data-gallery="portfolio-gallery-app"
-                    class="glightbox"
-                    ><img
-                      src="assets/img/portfolio/2023-ndhu-csie-gradrreviewsys.jpg"
-                      class="img-fluid"
-                      alt=""
-                  /></a>
-                  <div class="portfolio-info">
-                    <h4>
-                      <a
-                        href="https://app.csie.ndhu.edu.tw/gradreview/"
-                        target="_blank"
-                        title="More Details"
-                        >系畢業初審查詢系統<br />國立東華大學資訊工程學系</a
-                      >
-                    </h4>
-                    <p>2023, Website, UI/UX, PHP</p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div class="col-xl-4 col-md-6 portfolio-item filter-websiteuiux">
-                <div class="portfolio-wrap">
-                  <a
-                    href="assets/img/portfolio/2022-ndhu-csie-website.jpg"
-                    data-gallery="portfolio-gallery-app"
-                    class="glightbox"
-                    ><img
-                      src="assets/img/portfolio/2022-ndhu-csie-website.jpg"
-                      class="img-fluid"
-                      alt=""
-                  /></a>
-                  <div class="portfolio-info">
-                    <h4>
-                      <a href="https://csie.ndhu.edu.tw" target="_blank" title="More Details"
-                        >WordPress 雙語系所網站<br />國立東華大學資訊工程學系</a
-                      >
-                    </h4>
-                    <p>2022, Website, UI/UX, WordPress</p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div class="col-xl-4 col-md-6 portfolio-item filter-websiteuiux">
-                <div class="portfolio-wrap">
-                  <a
-                    href="assets/img/portfolio/2022-ndhu-ts-website.jpg"
-                    data-gallery="portfolio-gallery-app"
-                    class="glightbox"
-                    ><img
-                      src="assets/img/portfolio/2022-ndhu-ts-website.jpg"
-                      class="img-fluid"
-                      alt=""
-                  /></a>
-                  <div class="portfolio-info">
-                    <h4>
-                      <a href="https://ts.ndhu.edu.tw" target="_blank" title="More Details"
-                        >Rpage 雙語系所網站<br />國立東華大學臺灣文化學系</a
-                      >
-                    </h4>
-                    <p>2022, Website, UI/UX, Rpage</p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div class="col-xl-4 col-md-6 portfolio-item filter-websiteuiux">
-                <div class="portfolio-wrap">
-                  <a
-                    href="assets/img/portfolio/2022-ndhu-csie-gp-website.jpg"
-                    data-gallery="portfolio-gallery-app"
-                    class="glightbox"
-                    ><img
-                      src="assets/img/portfolio/2022-ndhu-csie-gp-website.jpg"
-                      class="img-fluid"
-                      alt=""
-                  /></a>
-                  <div class="portfolio-info">
-                    <h4>
-                      <a
-                        href="https://rc005.ndhu.edu.tw/p/412-1042-20365.php?Lang=zh-tw"
-                        target="_blank"
-                        title="More Details"
-                        >2022 畢業專題成果網頁<br />國立東華大學資訊工程學系</a
-                      >
-                    </h4>
-                    <p>2022, Website, UI/UX, Rpage</p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div class="col-xl-4 col-md-6 portfolio-item filter-websiteuiux">
-                <div class="portfolio-wrap">
-                  <a
-                    href="assets/img/portfolio/2022-ndhu-csie-theme-graduation.jpg"
-                    data-gallery="portfolio-gallery-app"
-                    class="glightbox"
-                    ><img
-                      src="assets/img/portfolio/2022-ndhu-csie-theme-graduation.jpg"
-                      class="img-fluid"
-                      alt=""
-                  /></a>
-                  <div class="portfolio-info">
-                    <h4>
-                      <a href="https://www.csie.ndhu.edu.tw" target="_blank" title="More Details"
-                        >2022 系網畢業季佈景<br />國立東華大學資訊工程學系</a
-                      >
-                    </h4>
-                    <p>2022, Website, Graduation, UI/UX, Wordpress</p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div class="col-xl-4 col-md-6 portfolio-item filter-socialmediamanager">
-                <div class="portfolio-wrap">
-                  <a
-                    href="assets/img/portfolio/2022-ndhu-csie-graduation-post.jpg"
-                    data-gallery="portfolio-gallery-app"
-                    class="glightbox"
-                    ><img
-                      src="assets/img/portfolio/2022-ndhu-csie-graduation-post.jpg"
-                      class="img-fluid"
-                      alt=""
-                  /></a>
-                  <div class="portfolio-info">
-                    <h4>
-                      <a
-                        href="https://www.facebook.com/NDHUCSIE/posts/1169269310298286"
-                        target="_blank"
-                        title="More Details"
-                        >2022 畢業季活動貼文<br />國立東華大學資訊工程學系</a
-                      >
-                    </h4>
-                    <p>2022, Graduation, Post</p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div class="col-xl-4 col-md-6 portfolio-item filter-video">
-                <div class="portfolio-wrap">
-                  <a
-                    href="assets/img/portfolio/2022-ndhu-csie-chill-master-video.jpg"
-                    data-gallery="portfolio-gallery-app"
-                    class="glightbox"
-                    ><img
-                      src="assets/img/portfolio/2022-ndhu-csie-chill-master-video.jpg"
-                      class="img-fluid"
-                      alt=""
-                  /></a>
-                  <div class="portfolio-info">
-                    <h4>
-                      <a
-                        href="https://www.youtube.com/watch?v=GxgGS1Ut-I4"
-                        target="_blank"
-                        title="More Details"
-                        >Chill 學大師 - 班會影片<br />國立東華大學資訊工程學系</a
-                      >
-                    </h4>
-                    <p>2022, Premiere Pro, Video</p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div class="col-xl-4 col-md-6 portfolio-item filter-video">
-                <div class="portfolio-wrap">
-                  <a
-                    href="assets/img/portfolio/2021-ndhu-csie-tassel-turning-video.jpg"
-                    data-gallery="portfolio-gallery-app"
-                    class="glightbox"
-                    ><img
-                      src="assets/img/portfolio/2021-ndhu-csie-tassel-turning-video.jpg"
-                      class="img-fluid"
-                      alt=""
-                  /></a>
-                  <div class="portfolio-info">
-                    <h4>
-                      <a
-                        href="https://www.youtube.com/watch?v=oRErHCRxkL8"
-                        target="_blank"
-                        title="More Details"
-                        >2021 線上撥穗典禮影片<br />國立東華大學資訊工程學系</a
-                      >
-                    </h4>
-                    <p>2021, Premiere Pro, Video</p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div class="col-xl-4 col-md-6 portfolio-item filter-websiteuiux">
-                <div class="portfolio-wrap">
-                  <a
-                    href="assets/img/portfolio/2021-ndhu-csie-theme-christmas.jpg"
-                    data-gallery="portfolio-gallery-app"
-                    class="glightbox"
-                    ><img
-                      src="assets/img/portfolio/2021-ndhu-csie-theme-christmas.jpg"
-                      class="img-fluid"
-                      alt=""
-                  /></a>
-                  <div class="portfolio-info">
-                    <h4>
-                      <a href="https://www.csie.ndhu.edu.tw" target="_blank" title="More Details"
-                        >2021 系網聖誕節佈景<br />國立東華大學資訊工程學系</a
-                      >
-                    </h4>
-                    <p>2021, Website, Christmas, UI/UX, Rpage</p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div class="col-xl-4 col-md-6 portfolio-item filter-websiteuiux">
-                <div class="portfolio-wrap">
-                  <a
-                    href="assets/img/portfolio/2021-ndhu-csie-seating-trace-website.jpg"
-                    data-gallery="portfolio-gallery-app"
-                    class="glightbox"
-                    ><img
-                      src="assets/img/portfolio/2021-ndhu-csie-seating-trace-website.jpg"
-                      class="img-fluid"
-                      alt=""
-                  /></a>
-                  <div class="portfolio-info">
-                    <h4>
-                      <a
-                        href="http://134.208.3.118/~ccchiang/COVID19"
-                        target="_blank"
-                        title="More Details"
-                        >實名制座位登記系統介面<br />國立東華大學資訊工程學系</a
-                      >
-                    </h4>
-                    <p>2021, Website, UI/UX</p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div class="col-xl-4 col-md-6 portfolio-item filter-websiteuiux">
-                <div class="portfolio-wrap">
-                  <a
-                    href="assets/img/portfolio/2021-ndhu-sa-website-vipcard.jpg"
-                    data-gallery="portfolio-gallery-app"
-                    class="glightbox"
-                    ><img
-                      src="assets/img/portfolio/2021-ndhu-sa-website-vipcard.jpg"
-                      class="img-fluid"
-                      alt=""
-                  /></a>
-                  <div class="portfolio-info">
-                    <h4>
-                      <a
-                        href="https://dhsa.ndhu.edu.tw/p/412-1110-19720.php?Lang=zh-tw"
-                        target="_blank"
-                        title="More Details"
-                        >2021 數位黑卡網頁<br />國立東華大學學生會</a
-                      >
-                    </h4>
-                    <p>2021, Website, UI/UX, Rpage</p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div class="col-xl-4 col-md-6 portfolio-item filter-websiteuiux">
-                <div class="portfolio-wrap">
-                  <a
-                    href="assets/img/portfolio/2021-ndhu-sa-website.png"
-                    data-gallery="portfolio-gallery-app"
-                    class="glightbox"
-                    ><img
-                      src="assets/img/portfolio/2021-ndhu-sa-website.png"
-                      class="img-fluid"
-                      alt=""
-                  /></a>
-                  <div class="portfolio-info">
-                    <h4>
-                      <a
-                        href="https://dhsa.ndhu.edu.tw/?Lang=zh-tw"
-                        target="_blank"
-                        title="More Details"
-                        >2021 學生會網站<br />國立東華大學學生會</a
-                      >
-                    </h4>
-                    <p>2021, Website, UI/UX, Rpage</p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div class="col-xl-4 col-md-6 portfolio-item filter-websiteuiux">
-                <div class="portfolio-wrap">
-                  <a
-                    href="assets/img/portfolio/2021-ndhu-bms-lab-website.jpg"
-                    data-gallery="portfolio-gallery-app"
-                    class="glightbox"
-                    ><img
-                      src="assets/img/portfolio/2021-ndhu-bms-lab-website.jpg"
-                      class="img-fluid"
-                      alt=""
-                  /></a>
-                  <div class="portfolio-info">
-                    <h4>
-                      <a
-                        href="http://faculty.ndhu.edu.tw/~PENGW/"
-                        target="_blank"
-                        title="More Details"
-                        >生物物理質譜實驗室網站<br />國立東華大學物理學系</a
-                      >
-                    </h4>
-                    <p>2021, Website, Static Website, UI/UX, Rpage</p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div class="col-xl-4 col-md-6 portfolio-item filter-websiteuiux">
-                <div class="portfolio-wrap">
-                  <a
-                    href="assets/img/portfolio/2020-gdsc-ndhu-website.jpg"
-                    data-gallery="portfolio-gallery-app"
-                    class="glightbox"
-                    ><img
-                      src="assets/img/portfolio/2020-gdsc-ndhu-website.jpg"
-                      class="img-fluid"
-                      alt=""
-                  /></a>
-                  <div class="portfolio-info">
-                    <h4>
-                      <a href="https://dscndhu.blogspot.com" target="_blank" title="More Details"
-                        >GDSC NDHU 社群網站<br />Google 學生開發者社群 在 東華</a
-                      >
-                    </h4>
-                    <p>2020, Website, UI/UX, Blogger</p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div class="col-xl-4 col-md-6 portfolio-item filter-websiteuiux">
-                <div class="portfolio-wrap">
-                  <a
-                    href="assets/img/portfolio/2021-ndhu-csie-gp-website.jpg"
-                    data-gallery="portfolio-gallery-app"
-                    class="glightbox"
-                    ><img
-                      src="assets/img/portfolio/2021-ndhu-csie-gp-website.jpg"
-                      class="img-fluid"
-                      alt=""
-                  /></a>
-                  <div class="portfolio-info">
-                    <h4>
-                      <a
-                        href="https://rc005.ndhu.edu.tw/p/412-1042-19772.php?Lang=zh-tw"
-                        target="_blank"
-                        title="More Details"
-                        >2021 畢業專題成果網頁<br />國立東華大學資訊工程學系</a
-                      >
-                    </h4>
-                    <p>2021, Website, UI/UX, Rpage</p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div class="col-xl-4 col-md-6 portfolio-item filter-video">
-                <div class="portfolio-wrap">
-                  <a
-                    href="assets/img/portfolio/2020-ndhu-csie-most-video.jpg"
-                    data-gallery="portfolio-gallery-app"
-                    class="glightbox"
-                    ><img
-                      src="assets/img/portfolio/2020-ndhu-csie-most-video.jpg"
-                      class="img-fluid"
-                      alt=""
-                  /></a>
-                  <div class="portfolio-info">
-                    <h4>
-                      <a
-                        href="https://www.youtube.com/watch?v=NfUs9kmXrsk"
-                        target="_blank"
-                        title="More Details"
-                        >2020 科技部計畫成果影片<br />國立東華大學資訊工程學系</a
-                      >
-                    </h4>
-                    <p>2020, Video</p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div class="col-xl-4 col-md-6 portfolio-item filter-video">
-                <div class="portfolio-wrap">
-                  <a
-                    href="assets/img/portfolio/2020-ndhu-csie-gp-video.jpg"
-                    data-gallery="portfolio-gallery-app"
-                    class="glightbox"
-                    ><img
-                      src="assets/img/portfolio/2020-ndhu-csie-gp-video.jpg"
-                      class="img-fluid"
-                      alt=""
-                  /></a>
-                  <div class="portfolio-info">
-                    <h4>
-                      <a
-                        href="https://www.youtube.com/watch?v=mPzKx4J_4Eg"
-                        target="_blank"
-                        title="More Details"
-                        >2020 畢業專題展影片<br />國立東華大學資訊工程學系</a
-                      >
-                    </h4>
-                    <p>2020, Premiere Pro, Video</p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-            </div>
-            <!-- End Portfolio Container -->
-          </div>
-        </div>
-      </section>
-      <!-- End Portfolio Section -->
-
-      <!-- ======= Media Coverage Section ======= -->
-      <section id="mediacoverage" class="homeMediaCov">
-        <div class="container" data-aos="fade-up">
-          <div class="row gy-4">
-            <div class="col-md-3 col-xl-2">
-              <div class="content">
-                <h3><strong>Media</strong> Coverage</h3>
-              </div>
-            </div>
-
-            <div class="col-md-9 col-xl-10">
-              <div
-                class="accordion accordion-flush"
-                id="faqlist"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <div class="accordion-item">
-                  <h3 class="accordion-header">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#faq-content-1"
-                    >
-                      <!-- <button class="accordion-button collapsed" -->
-                      <span class="num">1.</span>
-                      東華大學舉行110學年度畢業典禮－學成東華，鵬展天下 (JUNE 2022)
-                    </button>
-                  </h3>
-                  <div
-                    id="faq-content-1"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#faqlist"
-                  >
-                    <div class="accordion-body">
-                      <p>
-                        "今年畢業生資訊工程學系國際組李冠廷同學，他就學期間積極參與學生自治，熱心服務，曾擔任過「學生會資訊政委」、「學生議會監察長及學生議員」、「系學會美宣及網管」等，並實際進入多個校級會議擔任學生代表，為同學發聲。另創立東華Google學生開發者社群，成功向Google官方申請創立東華校內的「Google學生開發者社群」，將最新技術資源以及業界資訊帶入校內，與東華校內近200位同學與全球超過1200所大學社群，一同搭建起課內知識與業界實作能力間的橋梁。李同學在學期間成績優異，獲頒多次書卷獎，亦曾於資源教室擔任課輔老師，以所學帶領身旁同學一同成長。"
-                      </p>
-                      <p>
-                        <a
-                          href="https://www.ndhu.edu.tw/p/406-1000-197321.php?Lang=zh-tw"
-                          target="_blank"
-                          >國立東華大學</a
-                        >、
-                        <a href="https://www.cna.com.tw/postwrite/Chi/317342" target="_blank"
-                          >中央社訊息平台</a
-                        >、
-                        <a
-                          href="http://www.ksnews.com.tw/index.php/news/contents_page/0001616622"
-                          target="_blank"
-                          >更生日報</a
-                        >、
-                        <a
-                          href="https://news.pchome.com.tw/living/cna/20220611/index-16549201936134018009.html"
-                          target="_blank"
-                          >PChome新聞</a
-                        >、
-                        <a href="https://n.yam.com/Article/20220611267306" target="_blank"
-                          >蕃薯藤新聞</a
-                        >。
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- # news item-->
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- End Media Coverage Section -->
-    </main>
-
-    <!-- ======= Footer ======= -->
-    <footer id="footer" class="footer">
-      <div class="container">
+  <main id="main">
+    <section id="aboutme" class="about">
+      <div class="container" data-aos="fade-up">
         <div class="row gy-4">
-          <div class="col-lg-5 col-md-12 footer-info">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <span>Curtis Kuan-Ting Lee</span>
-            </a>
-            <p>Keep Going.</p>
-            <div class="social-links d-flex mt-4">
-              <a href="mailto:Curtis@Curtis.tw" class="email" target="_blank"
-                ><i class="bi bi-envelope-fill"></i
-              ></a>
-              <a href="https://linkedin.com/in/CansCurtis" class="linkedin" target="_blank"
-                ><i class="bi bi-linkedin"></i
-              ></a>
-              <a href="https://facebook.com/CansCurtis" class="facebook" target="_blank"
-                ><i class="bi bi-facebook"></i
-              ></a>
-              <a href="https://instagram.com/CansCurtis" class="instagram" target="_blank"
-                ><i class="bi bi-instagram"></i
-              ></a>
-              <!-- <a href="https://twitter.com/CansCurtis" class="twitter" target="_blank"
-                ><i class="bi bi-twitter"></i
-              ></a> -->
-              <a href="https://github.com/CansCurtis" class="linkedin" target="_blank"
-                ><i class="bi bi-github"></i
-              ></a>
+
+          <div class="col-lg-4 content order-1 order-lg-2">
+            <h3>Contact</h3>
+            <ul>
+              <li>
+                <i class="bi bi-envelope-fill"></i><a href="mailto:Curtis@Curtis.tw"
+                  target="_blank">Curtis@Curtis.tw</a>
+              </li>
+              <li>
+                <i class="bi bi-linkedin"></i><a href="https://linkedin.com/in/CansCurtis"
+                  target="_blank">@CansCurtis</a>
+              </li>
+              <li>
+                <i class="bi bi-facebook"></i><a href="https://facebook.com/CansCurtis" target="_blank">@CansCurtis
+                  (Curtis Lee)</a>
+              </li>
+              <li>
+                <i class="bi bi-instagram"></i><a href="https://instagram.com/CansCurtis" target="_blank">@CansCurtis
+                  (Curtis Lee)</a>
+              </li>
+              <li>
+                <i class="bi bi-github"></i><a href="https://github.com/CansCurtis" target="_blank">@CansCurtis</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-8 content order-2 order-lg-1">
+            <h3>Resume</h3>
+            <ul>
+              <li>
+                <i class="bi bi-file-earmark-pdf-fill"></i>Resume in English</b><br />
+                <a href="../resume/" target="_blank">https://Curtis.tw/resume</a>
+              </li>
+            </ul>
+
+            <h3 style="margin-top: 1.6em">Experience</h3>
+            <ul>
+              <li>
+                <i class="bi bi-info-circle-fill"></i><b>
+                  CIM Software Engineer - TSMC</b><br />Frontend Web Development (React / TypeScript)<br />
+                OCT 2024 - Present
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-8 content order-3 order-lg-3">
+            <h3 style="margin-top: 1.6em">Education</h3>
+            <ul>
+              <li>
+                <i class="bi bi-mortarboard-fill"></i><b>National Sun Yat-Sen University, Taiwan</b><br />
+                M.S. in Computer Science and Engineering<br />
+                Member in Database Systems Lab, focusing on data mining techniques<br />
+                September 2022 – June 2024
+              </li>
+              <li>
+                <i class="bi bi-mortarboard-fill"></i><b>National Dong Hwa University, Taiwan</b><br />
+                B.S. in Computer Science and Information Engineering
+                <small>(English-Taught International Program)</small><br />
+                September 2018 – June 2022
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-12 content order-4 order-lg-4">
+            <h3 style="margin-top: 1.6em">Part-Time Experience</h3>
+            <ul>
+              <li>
+                <i class="bi bi-info-circle-fill"></i><b>助教 - 資料庫系統 課程 - 國立中山大學資訊工程學系</b><br />FEB 2024 - JUN 2024
+              </li>
+              <li>
+                <i class="bi bi-info-circle-fill"></i><b>助教 - 編譯器製作 課程 - 國立中山大學資訊工程學系</b><br />FEB 2023 - JUN 2023
+              </li>
+              <li>
+                <i class="bi bi-info-circle-fill"></i><b>網站維護/影片後製/社群小編 -
+                  國立東華大學資訊工程學系</b><br />為系所課程與計畫，製作活動與專案之成果影片。並配合遠距教學，製作專供系內同學瀏覽的歷屆畢業專題成果展示網頁。<br />JUN
+                2020 - 2024
+              </li>
+              <li>
+                <i class="bi bi-info-circle-fill"></i><b>課輔老師 - 國立東華大學資源教室</b><br />為校內同學，提供每週2~3小時的程式設計相關課後輔導。<br />FEB
+                2021 - JUN
+                2021
+              </li>
+            </ul>
+
+            <h3 style="margin-top: 1.6em">License & Certification</h3>
+            <ul>
+              <li>
+                <i class="bi bi-check-circle-fill"></i><b>CPE - Professional Level</b><br />
+                Ranking: 82/2561 (3.2%)<br />
+                Problems Solved: 5/7<br />
+                Test Date: March 22, 2022
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill"></i><b>TOEIC - Golden Certificate</b><br />
+                Score: 905<br />
+                Test Date: February 20, 2022
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill"></i><b>Google - Fundamentals of Digital Marketing
+                  Certificate</b><br />
+                Issued Date: August 04, 2018
+              </li>
+            </ul>
+
+            <h3 style="margin-top: 1.6em">Thesis</h3>
+            <ul>
+              <li>
+                <i class="bi bi-arrow-right-circle-fill"></i><b>An Efficient BPIT-Based Algorithm with Bit Patterns for
+                  Mining Maximal and
+                  Closed High Utility Itemsets in the Dynamic Transactional Database <br />一個基於 BPIT
+                  架構且利用位元模式於探勘動態交易資料庫中最大與封閉高效益項目集的有效率演算法</b><br />
+                Keywords: Concise Representation, Data Mining, Dynamic Database, High Utility
+                Itemsets, Utility-List<br />
+                Advisor: Prof. Ye-In Chang<br />
+                <a href="https://hdl.handle.net/11296/73cwfq" target="_blank">Taiwan NDLTD</a>, <a
+                  href="https://ethesys.lis.nsysu.edu.tw/ETD-db/ETD-search-c/view_etd?URN=etd-0525124-023335"
+                  target="_blank">NSYSU eThesys</a>
+              </li>
+            </ul>
+
+            <h3 style="margin-top: 1.6em">Conference Paper</h3>
+            <ul>
+              <li>
+                <i class="bi bi-arrow-right-circle-fill"></i><b>An Efficient Algorithm for Mining High Average Utility
+                  Patterns Based on the
+                  UBLN-Tree</b><br />
+                Authors: Ye-In Chang, Po-Chun Chuang, Yu-Zhen Yang, Kuan-Ting Lee<br />
+                Conference: IEEE 10th International Conference on Applied System Innovation (IEEE
+                ICASI 2024), Kyoto, Japan<br />
+                <a href="https://www.taylorfrancis.com/chapters/edit/10.1201/9781003514831-1" target="_blank">Taylor &
+                  Francis</a>
+              </li>
+            </ul>
+
+            <h3 style="margin-top: 1.6em">Organizational Participation</h3>
+            <ul>
+              <li>
+                <i class="bi bi-suit-heart-fill"></i>時間：2022-2024 <br />單位：國立中山大學
+                <br />職稱：校務會議 工學院學生代表 (2022-2024)<br />
+                &emsp;&emsp;&emsp;校務資訊化委員會 學生代表 (2023-2024)<br />
+                &emsp;&emsp;&emsp;學生事務委員會 學生代表 (2023-2024)<br />
+              </li>
+              <li>
+                <i class="bi bi-suit-heart-fill"></i>時間：2021-2022
+                <br />單位：國立東華大學學生會 <br />職稱：資訊政委 <br />
+                說明：為學生會建立官方網站及活動紀錄查詢系統，並為各項學術活動與學權議題提供意見，使資訊能以更良好的方式傳遞，激起更多校內同學的共鳴與參與。
+              </li>
+              <li>
+                <i class="bi bi-suit-heart-fill"></i>時間：2021-Present
+                <br />單位：NDHU東華學生交流版 <br />職稱：臉書社群共同管理員 <br />
+                說明：管理「NDHU東華學生交流版」，提供校內師生以真實身份進行良善交流的平臺，藉以討論議題或宣傳活動。
+              </li>
+              <li>
+                <i class="bi bi-suit-heart-fill"></i>時間：2020-2021
+                <br />單位：Google學生開發者社群@東華 <br />職稱：Lead (社群校園負責人) <br />
+                說明：成功向Google
+                Developers官方申請成立校內社群，將來自Google官方，以及全球超過1200所大學社群的最新技術與學習資源帶入校內，與東華校內近200位同學一同搭建起課內知識與業界實作能力間的橋梁。
+              </li>
+              <li>
+                <i class="bi bi-suit-heart-fill"></i>時間：2019-2021
+                <br />單位：國立東華大學學生議會 <br />職稱：理工學院學生議員 (第九屆~第十屆)
+                <br />
+                說明：作為學生與校方間的溝通橋樑，持續反應校內師生的意見。同時於
+                性別平等教育委員會、圖書資訊服務諮詢委員會、校級課程委員會、教務會議、資通安全小組會議
+                等校級會議擔任學生代表，傳遞學生端的聲音。
+              </li>
+              <li>
+                <i class="bi bi-suit-heart-fill"></i>時間：2018-2019
+                <br />單位：國立東華大學資工系學會 <br />職稱：美宣兼網管 <br />
+                說明：為系學會建立官方網站，並製作活動宣傳海報與圖片。期間也曾為系所製作多部研究成果宣傳影片。
+              </li>
+            </ul>
+
+            <h3 style="margin-top: 1.6em">Award</h3>
+            <ul>
+              <li>
+                <i class="bi bi-award-fill"></i><b>在校服務優良獎</b><br />國立東華大學110學年度畢業典禮
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End About Me Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio sections-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Portfolio</h2>
+        </div>
+
+        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
+          data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
+          <div>
+            <ul class="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-websiteuiux">Website UI/UX</li>
+              <li data-filter=".filter-video">Video Editing</li>
+              <li data-filter=".filter-socialmediamanager">Social Media Manager</li>
+            </ul>
+            <!-- End Portfolio Filters -->
+          </div>
+
+          <div class="row gy-4 portfolio-container">
+            <div class="col-xl-4 col-md-6 portfolio-item filter-websiteuiux">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/2023-nsysu-demo-booking.jpg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/2023-nsysu-demo-booking.jpg" class="img-fluid"
+                    alt="" /></a>
+                <div class="portfolio-info">
+                  <h4>
+                    <a href="https://booking.nsysu.dev/event/idb231/" target="_blank" title="More Details">課程 Demo
+                      時段預約系統<br /><br /></a>
+                  </h4>
+                  <p>2023, Website, UI/UX, PHP</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-websiteuiux">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/2023-ndhu-csie-gradrreviewsys.jpg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/2023-ndhu-csie-gradrreviewsys.jpg" class="img-fluid"
+                    alt="" /></a>
+                <div class="portfolio-info">
+                  <h4>
+                    <a href="https://app.csie.ndhu.edu.tw/gradreview/" target="_blank"
+                      title="More Details">系畢業初審查詢系統<br />國立東華大學資訊工程學系</a>
+                  </h4>
+                  <p>2023, Website, UI/UX, PHP</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-websiteuiux">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/2022-ndhu-csie-website.jpg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/2022-ndhu-csie-website.jpg" class="img-fluid"
+                    alt="" /></a>
+                <div class="portfolio-info">
+                  <h4>
+                    <a href="https://csie.ndhu.edu.tw" target="_blank" title="More Details">WordPress
+                      雙語系所網站<br />國立東華大學資訊工程學系</a>
+                  </h4>
+                  <p>2022, Website, UI/UX, WordPress</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-websiteuiux">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/2022-ndhu-ts-website.jpg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/2022-ndhu-ts-website.jpg" class="img-fluid"
+                    alt="" /></a>
+                <div class="portfolio-info">
+                  <h4>
+                    <a href="https://ts.ndhu.edu.tw" target="_blank" title="More Details">Rpage
+                      雙語系所網站<br />國立東華大學臺灣文化學系</a>
+                  </h4>
+                  <p>2022, Website, UI/UX, Rpage</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-websiteuiux">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/2022-ndhu-csie-gp-website.jpg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/2022-ndhu-csie-gp-website.jpg" class="img-fluid"
+                    alt="" /></a>
+                <div class="portfolio-info">
+                  <h4>
+                    <a href="https://rc005.ndhu.edu.tw/p/412-1042-20365.php?Lang=zh-tw" target="_blank"
+                      title="More Details">2022 畢業專題成果網頁<br />國立東華大學資訊工程學系</a>
+                  </h4>
+                  <p>2022, Website, UI/UX, Rpage</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-websiteuiux">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/2022-ndhu-csie-theme-graduation.jpg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/2022-ndhu-csie-theme-graduation.jpg"
+                    class="img-fluid" alt="" /></a>
+                <div class="portfolio-info">
+                  <h4>
+                    <a href="https://www.csie.ndhu.edu.tw" target="_blank" title="More Details">2022
+                      系網畢業季佈景<br />國立東華大學資訊工程學系</a>
+                  </h4>
+                  <p>2022, Website, Graduation, UI/UX, Wordpress</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-socialmediamanager">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/2022-ndhu-csie-graduation-post.jpg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/2022-ndhu-csie-graduation-post.jpg" class="img-fluid"
+                    alt="" /></a>
+                <div class="portfolio-info">
+                  <h4>
+                    <a href="https://www.facebook.com/NDHUCSIE/posts/1169269310298286" target="_blank"
+                      title="More Details">2022 畢業季活動貼文<br />國立東華大學資訊工程學系</a>
+                  </h4>
+                  <p>2022, Graduation, Post</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-video">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/2022-ndhu-csie-chill-master-video.jpg"
+                  data-gallery="portfolio-gallery-app" class="glightbox"><img
+                    src="assets/img/portfolio/2022-ndhu-csie-chill-master-video.jpg" class="img-fluid" alt="" /></a>
+                <div class="portfolio-info">
+                  <h4>
+                    <a href="https://www.youtube.com/watch?v=GxgGS1Ut-I4" target="_blank" title="More Details">Chill 學大師
+                      - 班會影片<br />國立東華大學資訊工程學系</a>
+                  </h4>
+                  <p>2022, Premiere Pro, Video</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-video">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/2021-ndhu-csie-tassel-turning-video.jpg"
+                  data-gallery="portfolio-gallery-app" class="glightbox"><img
+                    src="assets/img/portfolio/2021-ndhu-csie-tassel-turning-video.jpg" class="img-fluid" alt="" /></a>
+                <div class="portfolio-info">
+                  <h4>
+                    <a href="https://www.youtube.com/watch?v=oRErHCRxkL8" target="_blank" title="More Details">2021
+                      線上撥穗典禮影片<br />國立東華大學資訊工程學系</a>
+                  </h4>
+                  <p>2021, Premiere Pro, Video</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-websiteuiux">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/2021-ndhu-csie-theme-christmas.jpg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/2021-ndhu-csie-theme-christmas.jpg" class="img-fluid"
+                    alt="" /></a>
+                <div class="portfolio-info">
+                  <h4>
+                    <a href="https://www.csie.ndhu.edu.tw" target="_blank" title="More Details">2021
+                      系網聖誕節佈景<br />國立東華大學資訊工程學系</a>
+                  </h4>
+                  <p>2021, Website, Christmas, UI/UX, Rpage</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-websiteuiux">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/2021-ndhu-csie-seating-trace-website.jpg"
+                  data-gallery="portfolio-gallery-app" class="glightbox"><img
+                    src="assets/img/portfolio/2021-ndhu-csie-seating-trace-website.jpg" class="img-fluid" alt="" /></a>
+                <div class="portfolio-info">
+                  <h4>
+                    <a href="http://134.208.3.118/~ccchiang/COVID19" target="_blank"
+                      title="More Details">實名制座位登記系統介面<br />國立東華大學資訊工程學系</a>
+                  </h4>
+                  <p>2021, Website, UI/UX</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-websiteuiux">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/2021-ndhu-sa-website-vipcard.jpg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/2021-ndhu-sa-website-vipcard.jpg" class="img-fluid"
+                    alt="" /></a>
+                <div class="portfolio-info">
+                  <h4>
+                    <a href="https://dhsa.ndhu.edu.tw/p/412-1110-19720.php?Lang=zh-tw" target="_blank"
+                      title="More Details">2021 數位黑卡網頁<br />國立東華大學學生會</a>
+                  </h4>
+                  <p>2021, Website, UI/UX, Rpage</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-websiteuiux">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/2021-ndhu-sa-website.png" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/2021-ndhu-sa-website.png" class="img-fluid"
+                    alt="" /></a>
+                <div class="portfolio-info">
+                  <h4>
+                    <a href="https://dhsa.ndhu.edu.tw/?Lang=zh-tw" target="_blank" title="More Details">2021
+                      學生會網站<br />國立東華大學學生會</a>
+                  </h4>
+                  <p>2021, Website, UI/UX, Rpage</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-websiteuiux">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/2021-ndhu-bms-lab-website.jpg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/2021-ndhu-bms-lab-website.jpg" class="img-fluid"
+                    alt="" /></a>
+                <div class="portfolio-info">
+                  <h4>
+                    <a href="http://faculty.ndhu.edu.tw/~PENGW/" target="_blank"
+                      title="More Details">生物物理質譜實驗室網站<br />國立東華大學物理學系</a>
+                  </h4>
+                  <p>2021, Website, Static Website, UI/UX, Rpage</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-websiteuiux">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/2020-gdsc-ndhu-website.jpg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/2020-gdsc-ndhu-website.jpg" class="img-fluid"
+                    alt="" /></a>
+                <div class="portfolio-info">
+                  <h4>
+                    <a href="https://dscndhu.blogspot.com" target="_blank" title="More Details">GDSC NDHU
+                      社群網站<br />Google 學生開發者社群 在 東華</a>
+                  </h4>
+                  <p>2020, Website, UI/UX, Blogger</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-websiteuiux">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/2021-ndhu-csie-gp-website.jpg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/2021-ndhu-csie-gp-website.jpg" class="img-fluid"
+                    alt="" /></a>
+                <div class="portfolio-info">
+                  <h4>
+                    <a href="https://rc005.ndhu.edu.tw/p/412-1042-19772.php?Lang=zh-tw" target="_blank"
+                      title="More Details">2021 畢業專題成果網頁<br />國立東華大學資訊工程學系</a>
+                  </h4>
+                  <p>2021, Website, UI/UX, Rpage</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-video">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/2020-ndhu-csie-most-video.jpg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/2020-ndhu-csie-most-video.jpg" class="img-fluid"
+                    alt="" /></a>
+                <div class="portfolio-info">
+                  <h4>
+                    <a href="https://www.youtube.com/watch?v=NfUs9kmXrsk" target="_blank" title="More Details">2020
+                      科技部計畫成果影片<br />國立東華大學資訊工程學系</a>
+                  </h4>
+                  <p>2020, Video</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+
+            <div class="col-xl-4 col-md-6 portfolio-item filter-video">
+              <div class="portfolio-wrap">
+                <a href="assets/img/portfolio/2020-ndhu-csie-gp-video.jpg" data-gallery="portfolio-gallery-app"
+                  class="glightbox"><img src="assets/img/portfolio/2020-ndhu-csie-gp-video.jpg" class="img-fluid"
+                    alt="" /></a>
+                <div class="portfolio-info">
+                  <h4>
+                    <a href="https://www.youtube.com/watch?v=mPzKx4J_4Eg" target="_blank" title="More Details">2020
+                      畢業專題展影片<br />國立東華大學資訊工程學系</a>
+                  </h4>
+                  <p>2020, Premiere Pro, Video</p>
+                </div>
+              </div>
+            </div>
+            <!-- End Portfolio Item -->
+          </div>
+          <!-- End Portfolio Container -->
+        </div>
+      </div>
+    </section>
+    <!-- End Portfolio Section -->
+
+    <!-- ======= Press Section ======= -->
+    <section id="press" class="homeMediaCov">
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+          <div class="col-md-3 col-xl-2">
+            <div class="content">
+              <h3><strong>Press</strong> Coverage</h3>
             </div>
           </div>
 
-          <div class="col-lg-2 col-6 footer-links"></div>
-
-          <div class="col-lg-2 col-6 footer-links"></div>
-
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <p>
-              <strong><i class="bi bi-envelope"></i></strong>
-              <a href="mailto:Curtis@Curtis.tw" class="email" target="_blank" style="color: white">
-                Curtis@Curtis.tw</a
-              >
-            </p>
+          <div class="col-md-9 col-xl-10">
+            <div class="accordion accordion-flush" id="presslist" data-aos="fade-up" data-aos-delay="100">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#press-content-1" aria-expanded="true">
+                    <span class="num">1.</span>
+                    東華大學舉行110學年度畢業典禮－學成東華，鵬展天下 (JUNE 2022)
+                  </button>
+                </h3>
+                <div id="press-content-1" class="accordion-collapse collapse show" data-bs-parent="#presslist">
+                  <div class="accordion-body">
+                    <p>
+                      "今年畢業生資訊工程學系國際組李冠廷同學，他就學期間積極參與學生自治，熱心服務，曾擔任過「學生會資訊政委」、「學生議會監察長及學生議員」、「系學會美宣及網管」等，並實際進入多個校級會議擔任學生代表，為同學發聲。另創立東華Google學生開發者社群，成功向Google官方申請創立東華校內的「Google學生開發者社群」，將最新技術資源以及業界資訊帶入校內，與東華校內近200位同學與全球超過1200所大學社群，一同搭建起課內知識與業界實作能力間的橋梁。李同學在學期間成績優異，獲頒多次書卷獎，亦曾於資源教室擔任課輔老師，以所學帶領身旁同學一同成長。"
+                    </p>
+                    <p>
+                      <a href="https://www.ndhu.edu.tw/p/406-1000-197321.php?Lang=zh-tw" target="_blank">國立東華大學</a>、
+                      <a href="https://www.cna.com.tw/postwrite/Chi/317342" target="_blank">中央社訊息平台</a>、
+                      <a href="http://www.ksnews.com.tw/index.php/news/contents_page/0001616622"
+                        target="_blank">更生日報</a>、
+                      <a href="https://etaiwan.news/2022/06/11/%ef%bd%9e-%e5%ad%b8%e6%88%90%e6%9d%b1%e8%8f%af%e3%80%80%e9%b5%ac%e5%b1%95%e5%a4%a9%e4%b8%8b-%ef%bd%9e%e6%9d%b1%e8%8f%af%e5%a4%a7%e5%ad%b8%e8%88%89%e8%a1%8c110%e5%ad%b8%e5%b9%b4%e5%ba%a6%e7%95%a2/"
+                        target="_blank">東台灣新聞網</a>、
+                      <a href="https://news.pchome.com.tw/living/cna/20220611/index-16549201936134018009.html"
+                        target="_blank">PChome新聞</a>、
+                      <a href="https://n.yam.com/Article/20220611267306" target="_blank">蕃薯藤新聞</a>。
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- # news item-->
+            </div>
           </div>
         </div>
       </div>
+    </section>
+    <!-- End Media Coverage Section -->
+  </main>
 
-      <div class="container mt-4">
-        <div class="copyright">
-          &copy; Copyright <strong><span>Curtis Kuan-Ting Lee</span></strong
-          >. All Rights Reserved.
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>Curtis Kuan-Ting Lee</span>
+          </a>
+          <p>Keep Going.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="mailto:Curtis@Curtis.tw" class="email" target="_blank"><i class="bi bi-envelope-fill"></i></a>
+            <a href="https://linkedin.com/in/CansCurtis" class="linkedin" target="_blank"><i
+                class="bi bi-linkedin"></i></a>
+            <a href="https://facebook.com/CansCurtis" class="facebook" target="_blank"><i
+                class="bi bi-facebook"></i></a>
+            <a href="https://instagram.com/CansCurtis" class="instagram" target="_blank"><i
+                class="bi bi-instagram"></i></a>
+            <a href="https://github.com/CansCurtis" class="linkedin" target="_blank"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links"></div>
+
+        <div class="col-lg-2 col-6 footer-links"></div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <p>
+            <strong><i class="bi bi-envelope"></i></strong>
+            <a href="mailto:Curtis@Curtis.tw" class="email" target="_blank" style="color: white">
+              Curtis@Curtis.tw</a>
+          </p>
         </div>
       </div>
-    </footer>
-    <!-- End Footer -->
+    </div>
 
-    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"
-      ><i class="bi bi-arrow-up-short"></i
-    ></a>
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Curtis Kuan-Ting Lee</span></strong>. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
 
-    <div id="preloader"></div>
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
-    <!-- Vendor JS Files -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.bundle.min.js"
-      integrity="sha512-9GacT4119eY3AcosfWtHMsT5JyZudrexyEVzTBWV3viP/YfB9e2pEy3N7WXL3SV6ASXpTU0vzzSxsbfsuUH4sQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"
-      integrity="sha512-S/H9RQ6govCzeA7F9D0m8NGfsGf0/HjJEiLEfWGaMCjFzavo+DkRbYtZLSO+X6cZsIKQ6JvV/7Y9YMaYnSGnAA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"
-      integrity="sha512-V1mUBtsuFY9SNr+ptlCQAlPkhsH0RGLcazvOCFt415od2Bf9/YkdjXxZCdhrP/TVYsPeAWuHa+KYLbjNbeEnWg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
+  <div id="preloader"></div>
 
-    <!-- Template Main JS File -->
-    <script src="assets/js/includeContents.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+  <!-- Vendor JS Files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.bundle.min.js"
+    integrity="sha512-9GacT4119eY3AcosfWtHMsT5JyZudrexyEVzTBWV3viP/YfB9e2pEy3N7WXL3SV6ASXpTU0vzzSxsbfsuUH4sQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"
+    integrity="sha512-S/H9RQ6govCzeA7F9D0m8NGfsGf0/HjJEiLEfWGaMCjFzavo+DkRbYtZLSO+X6cZsIKQ6JvV/7Y9YMaYnSGnAA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"
+    integrity="sha512-V1mUBtsuFY9SNr+ptlCQAlPkhsH0RGLcazvOCFt415od2Bf9/YkdjXxZCdhrP/TVYsPeAWuHa+KYLbjNbeEnWg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/includeContents.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
